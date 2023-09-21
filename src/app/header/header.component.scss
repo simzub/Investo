@@ -13,18 +13,33 @@
   outline-width: 0.125rem;
   outline-offset: 0.125rem;
   cursor: pointer;
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
 }
 
 .header-container {
-  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding: 2rem 1rem;
+  z-index: 50;
   display: flex;
   height: 2.5rem;
   justify-content: space-between;
   position: relative;
+  @media (min-width: 640px) {
+    padding: 2rem 1.5rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 2rem 2rem;
+  }
 }
 
 .menu-section {
   position: relative;
+  z-index: 10;
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -45,10 +60,13 @@
 }
 
 .menu-container {
-  display: flex;
+  display: none;
   align-items: center;
-  gap: 2.5rem;
   height: 100%;
+  @media (min-width: 1024px) {
+    display: flex;
+    gap: 2.5rem;
+  }
 }
 
 .menu-item {
@@ -104,5 +122,168 @@
 }
 
 .small-screen-menu {
-  display: none;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+.small-screen-menu-btn {
+  position: relative;
+  z-index: 10;
+  margin: -0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: $rounded-large;
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem;
+  stroke: rgb(17 24 39);
+  background-color: rgb(249 250 251);
+  transition: stroke 0.3s, background-color 0.3s;
+
+  &:hover {
+    stroke: rgb(75 85 99);
+    background-color: rgb(229 231 235);
+  }
+}
+.small-screen-navigation {
+  display: flex;
+  flex-direction: column;
+  > *:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+.small-screen-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.small-screen-item {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: rgb(55 65 81);
+  cursor: pointer;
+}
+
+.small-screen-login-link {
+  @include button-styles;
+  display: flex;
+  border: $border;
+  color: rgb(55 65 81);
+  transition: border 0.3s;
+
+  &:hover {
+    border: $border-hover;
+  }
+}
+
+.small-screen-download-link {
+  @include button-styles;
+  font-weight: 600;
+  display: flex;
+  height: 2.5rem;
+  background-color: rgb(31 41 55);
+  color: white;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: rgb(17 24 39);
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(209, 213, 219, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 0;
+  padding: 8rem 1.5rem 1.5rem 1.5rem;
+  background-color: rgb(249 250 251);
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 25px 50px -12px rgb(17 24 39 / 0.25);
+
+  box-sizing: border-box;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

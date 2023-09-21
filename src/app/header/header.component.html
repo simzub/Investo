@@ -22,7 +22,45 @@
                 </div>
             </div>
             <div class="user-actions">
-                <div class="small-screen-menu">small screen menu</div>
+                <div class="small-screen-menu">
+                    <!-- Open Modal Button -->
+                    <button class="small-screen-menu-btn" *ngIf="!isModalOpen" (click)="openModal()">
+                        <app-svg-menu-closed></app-svg-menu-closed>
+                    </button>
+                    <!-- Close Modal Button -->
+                    <button class="small-screen-menu-btn" *ngIf="isModalOpen" (click)="closeModal()">
+                        <app-svg-menu-open></app-svg-menu-open>
+                    </button>
+
+
+                    <!-- The Modal -->
+                    <div #myModal class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+
+                            <div class="small-screen-navigation">
+                                <a class="small-screen-item">
+                                    Features
+                                </a>
+                                <a class="small-screen-item">
+                                    Reviews
+                                </a>
+                                <a class="small-screen-item">
+                                    Pricing
+                                </a>
+                                <a class="small-screen-item">
+                                    FAQs
+                                </a>
+                            </div>
+                            <div class="small-screen-links">
+                                <a class="small-screen-login-link">Log in</a>
+                                <a class="small-screen-download-link">Download the app</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <a class="login-link">Log in</a>
                 <a class="download-link">Download</a>
             </div>
