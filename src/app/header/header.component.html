@@ -4,7 +4,8 @@
             <div class="menu-section">
                 <a class="app-logo">
                     <app-svg-logo></app-svg-logo>
-                    <div class="app-text">Investo</div>
+                    <div class="app-text">Investo
+                    </div>
                 </a>
                 <div class="menu-container">
                     <a class="menu-item">
@@ -34,10 +35,10 @@
 
 
                     <!-- The Modal -->
-                    <div #myModal class="modal">
+                    <div #myModal class="modal" [@openAndClose]="animationState">
 
                         <!-- Modal content -->
-                        <div class="modal-content">
+                        <div class="modal-content" [@slideInOut]="animationState">
 
                             <div class="small-screen-navigation">
                                 <a class="small-screen-item">
