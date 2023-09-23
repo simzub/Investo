@@ -5,7 +5,13 @@ import {
   animate,
   transition,
 } from '@angular/animations';
-import { Component, ElementRef, ViewChild, HostListener } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  ViewChild,
+  HostListener,
+  Renderer2,
+} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -24,10 +30,13 @@ export class HeaderComponent {
   isModalOpen = false;
   animationState = 'closed';
 
+  constructor(private renderer: Renderer2) {}
+
   openModal() {
     this.isModalOpen = true;
     this.modal.nativeElement.style.display = 'block';
     this.animationState = 'open';
+    this.renderer.setStyle(document.body, 'overflow', 'hidden');
   }
 
   closeModal() {
@@ -36,6 +45,7 @@ export class HeaderComponent {
       setTimeout(() => {
         this.isModalOpen = false;
         this.modal.nativeElement.style.display = 'none';
+        this.renderer.removeStyle(document.body, 'overflow');
       }, 300);
     }
   }
