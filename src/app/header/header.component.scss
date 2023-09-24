@@ -1,23 +1,5 @@
 @import "../../styles/variables.scss";
-
-@mixin button-styles {
-  box-sizing: border-box;
-  height: 100%;
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  padding: 0.5rem 0.75rem;
-  border-radius: $rounded-large;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
-  outline-width: 0.125rem;
-  outline-offset: 0.125rem;
-  cursor: pointer;
-  display: none;
-  @media (min-width: 1024px) {
-    display: flex;
-  }
-}
+@import "../../styles/button-mixins.scss";
 
 .header-container {
   margin-left: auto;
@@ -29,10 +11,10 @@
   height: 2.5rem;
   justify-content: space-between;
   position: relative;
-  @media (min-width: 640px) {
+  @media (min-width: $breakpoint-sm) {
     padding: 2rem 1.5rem;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-lg) {
     padding: 2rem 2rem;
   }
 }
@@ -63,7 +45,7 @@
   display: none;
   align-items: center;
   height: 100%;
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-lg) {
     display: flex;
     gap: 2.5rem;
   }
@@ -122,7 +104,7 @@
 }
 
 .small-screen-menu {
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-lg) {
     display: none;
   }
 }

@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { SvgLogoComponent } from '../assets/svg/svg-logo/svg-logo.component';
 import { SvgMenuOpenComponent } from 'src/assets/svg/svg-menu-open/svg-menu-open.component';
 import { SvgMenuClosedComponent } from 'src/assets/svg/svg-menu-closed/svg-menu-closed.component';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { SvgAppStoreComponent } from 'src/assets/svg/svg-app-store/svg-app-store.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { SvgMenuClosedComponent } from 'src/assets/svg/svg-menu-closed/svg-menu-
     SvgLogoComponent,
     SvgMenuOpenComponent,
     SvgMenuClosedComponent,
+    SvgAppStoreComponent,
+    IntroductionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
