@@ -10,6 +10,8 @@ import { SvgMenuClosedComponent } from 'src/assets/svg/svg-menu-closed/svg-menu-
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SvgAppStoreComponent } from 'src/assets/svg/svg-app-store/svg-app-store.component';
 import { SvgPlayComponent } from 'src/assets/svg/svg-play/svg-play.component';
+import { SvgSpinnerBigComponent } from 'src/assets/svg/svg-spinner-big/svg-spinner-big.component';
+import { SvgSpinnerSmallComponent } from 'src/assets/svg/svg-spinner-small/svg-spinner-small.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { SvgPlayComponent } from 'src/assets/svg/svg-play/svg-play.component';
     SvgMenuClosedComponent,
     SvgAppStoreComponent,
     SvgPlayComponent,
+    SvgSpinnerBigComponent,
+    SvgSpinnerSmallComponent,
     IntroductionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
