@@ -9,6 +9,7 @@ import { SvgMenuOpenComponent } from 'src/assets/svg/svg-menu-open/svg-menu-open
 import { SvgMenuClosedComponent } from 'src/assets/svg/svg-menu-closed/svg-menu-closed.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SvgAppStoreComponent } from 'src/assets/svg/svg-app-store/svg-app-store.component';
+import { SvgPlayComponent } from 'src/assets/svg/svg-play/svg-play.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SvgAppStoreComponent } from 'src/assets/svg/svg-app-store/svg-app-store
     SvgMenuOpenComponent,
     SvgMenuClosedComponent,
     SvgAppStoreComponent,
+    SvgPlayComponent,
     IntroductionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],

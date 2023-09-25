@@ -7,21 +7,24 @@
                     exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.</p>
                 <div class="intro-links">
                     <a class="intro-app"><app-svg-app-store></app-svg-app-store></a>
-                    <a class="intro-link">Link 2</a>
+                    <a class="intro-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        target="_blank"><app-svg-play></app-svg-play><span>Watch the
+                            video</span></a>
                 </div>
             </div>
-            <div class="intro-number">2</div>
+            <div class="intro-phone">
+                <div></div>
+                <div></div>
+            </div>
             <div class="intro-list">
-                <p class="intro-list-title">List Title</p>
-                <ul class="intro-list-items">
-                    <li class="intro-list-item">1</li>
-                    <li class="intro-list-item">2</li>
-                    <li class="intro-list-item">3</li>
-                    <li class="intro-list-item">4</li>
-                    <li class="intro-list-item">5</li>
-                    <li class="intro-list-item">6</li>
-                    <li class="intro-list-item">7</li>
-                    <li class="intro-list-item">8</li>
+                <p>As featured in</p>
+                <ul>
+                    <li *ngFor="let publication of featuredIn; let i = index" [class.intro-list-item]="i===3 || i===7">
+                        <img [alt]="publication" loading="lazy" [width]="publication.width" height="32" decoding="async"
+                            data-nimg="1" style="color: transparent"
+                            [src]="'../../assets/img/' + publication.name.toLowerCase() + '.svg'" />
+                    </li>
+
                 </ul>
             </div>
         </div>
