@@ -193,54 +193,28 @@
   }
 }
 
-.intro-phone-container {
-  position: relative;
-  aspect-ratio: 366/729;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 22.875rem;
-
-  img {
-    pointer-events: none;
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    width: 100%;
-    color: transparent;
+.intro-phone-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+  div {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: white;
+    align-items: center;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
   }
 }
 
-.intro-phone-shadows {
-  position: absolute;
-  top: calc(1 / 729 * 100%);
-  bottom: calc(1 / 729 * 100%);
-  left: calc(7 / 729 * 100%);
-  right: calc(5 / 729 * 100%);
-  border-radius: calc(58 / 366 * 100%) / calc(58 / 729 * 100%);
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-}
-
 .intro-phone-content {
-  position: absolute;
-  left: calc(23 / 366 * 100%);
-  top: calc(23 / 729 * 100%);
-  display: grid;
-  height: calc(686 / 729 * 100%);
-  width: calc(318 / 366 * 100%);
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  overflow: hidden;
-  background-color: rgb(17 24 39);
-
-  padding-top: calc(23 / 318 * 100%);
-}
-
-.intro-phone-frame {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  pointer-events: none;
-  color: transparent;
-  inset: 0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex: 1 1 auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: white;
 }
 
 .intro-list {

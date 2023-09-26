@@ -13,6 +13,8 @@ import { SvgPlayComponent } from 'src/assets/svg/svg-play/svg-play.component';
 import { SvgSpinnerBigComponent } from 'src/assets/svg/svg-spinner-big/svg-spinner-big.component';
 import { SvgSpinnerSmallComponent } from 'src/assets/svg/svg-spinner-small/svg-spinner-small.component';
 import { SvgPhoneBorderComponent } from 'src/assets/svg/svg-phone-border/svg-phone-border.component';
+import { PhoneFrameComponent } from './shared/phone-frame/phone-frame.component';
+import { SvgProfileLogoComponent } from 'src/assets/svg/svg-profile-logo/svg-profile-logo.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SvgPhoneBorderComponent } from 'src/assets/svg/svg-phone-border/svg-pho
     SvgSpinnerBigComponent,
     SvgSpinnerSmallComponent,
     SvgPhoneBorderComponent,
+    SvgProfileLogoComponent,
     IntroductionComponent,
+    PhoneFrameComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
