@@ -78,6 +78,7 @@
 
 .intro-links {
   margin-top: 2rem;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.5rem;
@@ -164,13 +165,13 @@
   }
 }
 
-.intro-phone-content {
+.intro-phone-main {
   margin-left: -1rem;
   margin-right: -1rem;
   height: 24rem;
   padding-left: 2.25rem;
   padding-right: 2.25rem;
-  mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), transparent);
+  mask-image: linear-gradient(180deg, #fff 60%, transparent);
 
   @media (min-width: $breakpoint-sm) {
     margin-left: 0;
@@ -190,6 +191,56 @@
   @media (min-width: $breakpoint-xl) {
     bottom: -8rem;
   }
+}
+
+.intro-phone-container {
+  position: relative;
+  aspect-ratio: 366/729;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 22.875rem;
+
+  img {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+  }
+}
+
+.intro-phone-shadows {
+  position: absolute;
+  top: calc(1 / 729 * 100%);
+  bottom: calc(1 / 729 * 100%);
+  left: calc(7 / 729 * 100%);
+  right: calc(5 / 729 * 100%);
+  border-radius: calc(58 / 366 * 100%) / calc(58 / 729 * 100%);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.intro-phone-content {
+  position: absolute;
+  left: calc(23 / 366 * 100%);
+  top: calc(23 / 729 * 100%);
+  display: grid;
+  height: calc(686 / 729 * 100%);
+  width: calc(318 / 366 * 100%);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  overflow: hidden;
+  background-color: rgb(17 24 39);
+
+  padding-top: calc(23 / 318 * 100%);
+}
+
+.intro-phone-frame {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+  color: transparent;
+  inset: 0;
 }
 
 .intro-list {

@@ -4,7 +4,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
 @Component({
   selector: 'app-svg-spinner-big',
   templateUrl: './svg-spinner-big.component.html',
-  styleUrls: ['./svg-spinner-big.component.scss'],
+
   animations: [
     trigger('spinSlow', [
       transition('in => out', [
