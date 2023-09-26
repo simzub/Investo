@@ -15,6 +15,7 @@ import { SvgSpinnerSmallComponent } from 'src/assets/svg/svg-spinner-small/svg-s
 import { SvgPhoneBorderComponent } from 'src/assets/svg/svg-phone-border/svg-phone-border.component';
 import { PhoneFrameComponent } from './shared/phone-frame/phone-frame.component';
 import { SvgProfileLogoComponent } from 'src/assets/svg/svg-profile-logo/svg-profile-logo.component';
+import { SvgPlusComponent } from 'src/assets/svg/svg-plus/svg-plus.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SvgProfileLogoComponent } from 'src/assets/svg/svg-profile-logo/svg-pro
     SvgSpinnerSmallComponent,
     SvgPhoneBorderComponent,
     SvgProfileLogoComponent,
+    SvgPlusComponent,
     IntroductionComponent,
     PhoneFrameComponent,
   ],

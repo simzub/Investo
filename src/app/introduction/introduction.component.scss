@@ -193,21 +193,6 @@
   }
 }
 
-.intro-phone-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1rem 0 1rem;
-  div {
-    display: flex;
-    gap: 0.5rem;
-    cursor: pointer;
-    color: white;
-    align-items: center;
-    font-size: 0.875rem; /* 14px */
-    line-height: 1.25rem; /* 20px */
-  }
-}
-
 .intro-phone-content {
   margin-top: 1.5rem;
   display: flex;
@@ -217,6 +202,50 @@
   background-color: white;
 }
 
+.intro-phone-padding {
+  padding: 1rem;
+  width: 100%;
+}
+
+.intro-phone-stock {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.intro-phone-stock-name {
+  display: flex;
+  gap: 0.5rem;
+
+  div {
+    font-size: $font-size-extra-small;
+    line-height: 1.5rem;
+    color: rgb(107 114 128);
+  }
+  p {
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    color: rgb(17 24 39);
+    margin: 0;
+  }
+}
+
+.intro-phone-container {
+  margin-top: 0.75rem;
+  border-top-width: 0.0625rem;
+  border-color: rgb(229 231 235);
+  padding-top: 1.25rem;
+}
+.intro-phone-percentages {
+}
+.intro-phone-timeline {
+}
+.intro-phone-graph {
+}
+.intro-phone-btn {
+}
+.intro-phone-price {
+}
 .intro-list {
   position: relative;
   margin-top: -1rem;
