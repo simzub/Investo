@@ -16,6 +16,7 @@ import { SvgPhoneBorderComponent } from 'src/assets/svg/svg-phone-border/svg-pho
 import { PhoneFrameComponent } from './shared/phone-frame/phone-frame.component';
 import { SvgProfileLogoComponent } from 'src/assets/svg/svg-profile-logo/svg-profile-logo.component';
 import { SvgPlusComponent } from 'src/assets/svg/svg-plus/svg-plus.component';
+import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-plus/svg-graph.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SvgPlusComponent } from 'src/assets/svg/svg-plus/svg-plus.component';
     SvgPhoneBorderComponent,
     SvgProfileLogoComponent,
     SvgPlusComponent,
+    SvgGraphComponent,
     IntroductionComponent,
     PhoneFrameComponent,
   ],
