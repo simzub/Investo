@@ -31,9 +31,16 @@
                                 </div>
                                 <div class="intro-phone-container">
                                     <div class="intro-phone-percentages">
-                                        <div class="percentages-price">752.56</div>
+                                        <div class="percentages-price">
+                                            {{ data[currentObjectId].price.toFixed(2)
+                                            }}
+                                        </div>
                                         <div class="percentages-currency">EUR</div>
-                                        <div class="percentages-percentage">+12.21%</div>
+                                        <div class="percentages-percentage"
+                                            *ngIf="data[currentObjectId]?.percentage !== null"
+                                            [ngStyle]="percentageStyle">
+                                            {{ data[currentObjectId].percentage?.toFixed(2) + '%'}}
+                                        </div>
                                     </div>
                                     <div class="intro-phone-timeline">
                                         <div>1D</div>
@@ -44,7 +51,8 @@
                                         <div>5Y</div>
                                     </div>
                                     <div class="intro-phone-graph">
-                                        <app-svg-graph></app-svg-graph>
+                                        <app-svg-graph (hoverChange)="handleHoverChange($event)"></app-svg-graph>
+
                                     </div>
                                     <div class="intro-phone-btn">Trade</div>
                                     <div class="intro-phone-price"></div>
