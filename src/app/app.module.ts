@@ -17,6 +17,9 @@ import { PhoneFrameComponent } from './shared/phone-frame/phone-frame.component'
 import { SvgProfileLogoComponent } from 'src/assets/svg/svg-profile-logo/svg-profile-logo.component';
 import { SvgPlusComponent } from 'src/assets/svg/svg-plus/svg-plus.component';
 import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-plus/svg-graph.component';
+import { PrimaryFeaturesComponent } from './primary-features/primary-features.component';
+import { FeaturesMobileComponent } from './primary-features/features-mobile/features-mobile.component';
+import { FeaturesDesktopComponent } from './primary-features/features-desktop/features-desktop.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-plus/svg-graph.c
     SvgGraphComponent,
     IntroductionComponent,
     PhoneFrameComponent,
+    PrimaryFeaturesComponent,
+    FeaturesMobileComponent,
+    FeaturesDesktopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
