@@ -20,6 +20,9 @@ import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-plus/svg-graph.c
 import { PrimaryFeaturesComponent } from './primary-features/primary-features.component';
 import { FeaturesMobileComponent } from './primary-features/features-mobile/features-mobile.component';
 import { FeaturesDesktopComponent } from './primary-features/features-desktop/features-desktop.component';
+import { SvgDeviceNotificationComponent } from 'src/assets/svg/svg-device-notification/svg-device-notification.component';
+import { SvgDeviceTouchComponent } from 'src/assets/svg/svg-device-touch/svg-device-touch.component';
+import { SvgDeviceUserComponent } from 'src/assets/svg/svg-device-user/svg-device-user.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,9 @@ import { FeaturesDesktopComponent } from './primary-features/features-desktop/fe
     SvgProfileLogoComponent,
     SvgPlusComponent,
     SvgGraphComponent,
+    SvgDeviceNotificationComponent,
+    SvgDeviceTouchComponent,
+    SvgDeviceUserComponent,
     IntroductionComponent,
     PhoneFrameComponent,
     PrimaryFeaturesComponent,

@@ -28,9 +28,10 @@
   position: relative;
   border-radius: 1rem;
   transition: background-color 0.3s;
+  cursor: pointer;
 
   &:hover {
-    background-color: rgb(31 41 55);
+    background-color: rgba(64, 64, 64, 0.1);
   }
 }
 
@@ -51,4 +52,9 @@
     line-height: 1.5rem;
     color: rgb(163 163 163);
   }
+}
+
+.phone {
+  position: relative;
+  grid-column: span 6 / span 6;
 }
