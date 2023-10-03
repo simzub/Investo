@@ -19,7 +19,13 @@ import {
           backgroundColor: 'rgba(64, 64, 64, 0.5)',
         })
       ),
-      transition('inactive <=> active', [animate('0.3s ease-in-out')]),
+      transition('inactive <=> active', [animate('0s')]),
+    ]),
+    trigger('headerAnimation', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1s', style({ opacity: 1 })),
+      ]),
     ]),
   ],
 })

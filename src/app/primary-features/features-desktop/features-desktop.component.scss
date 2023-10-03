@@ -58,3 +58,83 @@
   position: relative;
   grid-column: span 6 / span 6;
 }
+
+.phone-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.phone-description {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgb(115 115 115);
+    margin: 0;
+    span {
+      color: white;
+    }
+  }
+}
+
+.phone-description-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+}
+
+.phone-items {
+  margin-top: 1.5rem;
+  flex: 1 1 auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: white;
+  height: 32.5rem;
+}
+
+.phone-item-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.phone-item {
+  > *:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
+.phone-label-title {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(115 115 115);
+}
+
+.phone-label-content {
+  margin-top: 0.5rem;
+  border-bottom: 0.0625rem solid rgb(229 229 229);
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(23 23 23);
+}
+
+.phone-button {
+  margin-top: 1.5rem;
+  border-radius: $rounded-large;
+  background-color: rgb(168, 85, 247);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: white;
+}

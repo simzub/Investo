@@ -229,7 +229,7 @@
 
 .intro-phone-container {
   margin-top: 0.75rem;
-  border-top: 0.0625rem solid rgb(229 231 235);
+  border-top: 0.0625rem solid rgb(229 229 229);
   padding-top: 1.25rem;
 }
 .intro-phone-percentages {
@@ -288,6 +288,24 @@
   color: white;
 }
 .intro-phone-price {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.intro-phone-price-element {
+  display: flex;
+  border-bottom: 0.0625rem solid rgb(243 243 243);
+  justify-content: space-between;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  p {
+    margin: 0;
+    color: rgb(115 115 115);
+  }
+  span {
+    font-weight: 500;
+    color: rgb(23 23 23);
+  }
 }
 .intro-list {
   position: relative;
