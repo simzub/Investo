@@ -33,48 +33,13 @@
         <div class="phone-main">
             <app-phone-frame>
                 <div class="phone-content" [@headerAnimation]="activeIndex" *ngIf="activeIndex===0">
-                    <div class="phone-description">
-                        <div class="phone-description-header">
-                            Invite people
-                        </div>
-                        <p>Get tips <span>5s sooner</span> for every invite.</p>
-                    </div>
-                    <div class="phone-items">
-                        <div class="phone-item-container">
-                            <div class="phone-item">
-                                <div>
-                                    <div class="phone-label-title">Full name</div>
-                                    <div class="phone-label-content">Albert H. Wiggin</div>
-                                </div>
-                                <div>
-                                    <div class="phone-label-title">Email address</div>
-                                    <div class="phone-label-content">awiggin@chase.com</div>
-                                </div>
-                            </div>
-                            <div class="phone-button">Invite person</div>
-                        </div>
-                    </div>
+                    <app-phone-content-invite></app-phone-content-invite>
                 </div>
                 <div class="phone-content" [@headerAnimation]="activeIndex" *ngIf="activeIndex===1">
-                    <div class="phone-description">
-                        <div class="phone-description-header">
-                            Stocks
-                        </div>
-                        <p>March 9, 2022</p>
-                    </div>
-                    <div class="phone-items">
-                    </div>
+                    <app-phone-content-stocks></app-phone-content-stocks>
                 </div>
                 <div class="phone-content" [@headerAnimation]="activeIndex" *ngIf="activeIndex===2">
-                    <div class="phone-description">
-                        <div class="phone-description-header">
-                            Buy $LA
-                        </div>
-                        <p><span>$34.28</span> per share</p>
-                    </div>
-                    <div class="phone-items">
-
-                    </div>
+                    <app-phone-content-invest></app-phone-content-invest>
                 </div>
             </app-phone-frame>
         </div>

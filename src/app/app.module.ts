@@ -16,13 +16,25 @@ import { SvgPhoneBorderComponent } from 'src/assets/svg/svg-phone-border/svg-pho
 import { PhoneFrameComponent } from './shared/phone-frame/phone-frame.component';
 import { SvgProfileLogoComponent } from 'src/assets/svg/svg-profile-logo/svg-profile-logo.component';
 import { SvgPlusComponent } from 'src/assets/svg/svg-plus/svg-plus.component';
-import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-plus/svg-graph.component';
 import { PrimaryFeaturesComponent } from './primary-features/primary-features.component';
 import { FeaturesMobileComponent } from './primary-features/features-mobile/features-mobile.component';
 import { FeaturesDesktopComponent } from './primary-features/features-desktop/features-desktop.component';
 import { SvgDeviceNotificationComponent } from 'src/assets/svg/svg-device-notification/svg-device-notification.component';
 import { SvgDeviceTouchComponent } from 'src/assets/svg/svg-device-touch/svg-device-touch.component';
 import { SvgDeviceUserComponent } from 'src/assets/svg/svg-device-user/svg-device-user.component';
+import { PhoneContentInviteComponent } from './primary-features/phone-content/phone-content-invite/phone-content-invite.component';
+import { PhoneContentStocksComponent } from './primary-features/phone-content/phone-content-stocks/phone-content-stocks.component';
+import { PhoneContentInvestComponent } from './primary-features/phone-content/phone-content-invest/phone-content-invest.component';
+import { SvgGrowComponent } from 'src/assets/svg/svg-grow/svg-grow.component';
+import { SvgLaravelComponent } from 'src/assets/svg/stocks/svg-laravel/svg-laravel.component';
+import { SvgTupleComponent } from 'src/assets/svg/stocks/svg-tuple/svg-tuple.component';
+import { SvgTransistorComponent } from 'src/assets/svg/stocks/svg-transistor/svg-transistor.component';
+import { SvgDiageoComponent } from 'src/assets/svg/stocks/svg-diageo/svg-diageo.component';
+import { SvgStatickitComponent } from 'src/assets/svg/stocks/svg-statickit/svg-statickit.component';
+import { SvgStatamicComponent } from 'src/assets/svg/stocks/svg-statamic/svg-statamic.component';
+import { SvgMirageComponent } from 'src/assets/svg/stocks/svg-mirage/svg-mirage.component';
+import { SvgReversableComponent } from 'src/assets/svg/stocks/svg-reversable/svg-reversable.component';
+import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-graph.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +54,23 @@ import { SvgDeviceUserComponent } from 'src/assets/svg/svg-device-user/svg-devic
     SvgDeviceNotificationComponent,
     SvgDeviceTouchComponent,
     SvgDeviceUserComponent,
+    SvgGrowComponent,
+    SvgLaravelComponent,
+    SvgTupleComponent,
+    SvgTransistorComponent,
+    SvgDiageoComponent,
+    SvgStatickitComponent,
+    SvgStatamicComponent,
+    SvgMirageComponent,
+    SvgReversableComponent,
     IntroductionComponent,
     PhoneFrameComponent,
     PrimaryFeaturesComponent,
     FeaturesMobileComponent,
     FeaturesDesktopComponent,
+    PhoneContentInviteComponent,
+    PhoneContentStocksComponent,
+    PhoneContentInvestComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

@@ -103,9 +103,15 @@
   padding-right: 1rem;
 }
 
-.phone-item {
+.phone-item-far {
   > *:not(:first-child) {
     margin-top: 1.5rem;
+  }
+}
+
+.phone-item-close {
+  > *:not(:first-child) {
+    margin-top: 1rem;
   }
 }
 

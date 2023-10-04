@@ -1,0 +1,92 @@
+@import ".../../../../../../styles/variables.scss";
+
+.description {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+  p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgb(115 115 115);
+    margin: 0;
+    span {
+      color: white;
+    }
+  }
+}
+
+.description-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+}
+
+.items {
+  margin-top: 1.5rem;
+  flex: 1 1 auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: white;
+  height: 32.5rem;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-bottom: 0.0625rem solid rgb(229 229 229);
+}
+
+.item-logo {
+  flex: none;
+  border-radius: 9999px;
+}
+
+.item-title {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(23 23 23);
+  flex: 1 1 auto;
+}
+
+.label {
+  flex: none;
+  text-align: right;
+  p {
+    margin: 0;
+    color: rgb(23 23 23);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  span {
+    line-height: 1.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+.label-content {
+  margin-top: 0.5rem;
+  border-bottom: 0.0625rem solid rgb(229 229 229);
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(23 23 23);
+}
+
+.button {
+  margin-top: 1.5rem;
+  border-radius: $rounded-large;
+  background-color: rgb(168, 85, 247);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
