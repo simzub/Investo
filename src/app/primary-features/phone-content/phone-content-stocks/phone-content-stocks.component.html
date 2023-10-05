@@ -4,69 +4,25 @@
     </div>
     <p>March 9, 2022</p>
 </div>
+
 <div class="items">
-    <div class="item-container">
-        <app-svg-laravel></app-svg-laravel>
-        <div class="item-title">Laravel</div>
+    <div class="item-container" *ngFor="let item of stockItems">
+        <ng-container [ngSwitch]="item.title.toLowerCase()">
+            <app-svg-laravel *ngSwitchCase="'laravel'"></app-svg-laravel>
+            <app-svg-tuple *ngSwitchCase="'tuple'"></app-svg-tuple>
+            <app-svg-transistor *ngSwitchCase="'transistor'"></app-svg-transistor>
+            <app-svg-diageo *ngSwitchCase="'diageo'"></app-svg-diageo>
+            <app-svg-statickit *ngSwitchCase="'statickit'"></app-svg-statickit>
+            <app-svg-statamic *ngSwitchCase="'statamic'"></app-svg-statamic>
+            <app-svg-mirage *ngSwitchCase="'mirage'"></app-svg-mirage>
+            <app-svg-reversable *ngSwitchCase="'reversable'"></app-svg-reversable>
+        </ng-container>
+        <div class="item-title">{{ item.title }}</div>
         <div class="label">
-            <p>4,098.01</p>
-            <span>+4.98%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-tuple></app-svg-tuple>
-        <div class="item-title">Tuple</div>
-        <div class="label">
-            <p>5,451.10</p>
-            <span>-3.38%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-transistor></app-svg-transistor>
-        <div class="item-title">Transistor</div>
-        <div class="label">
-            <p>4,098.41</p>
-            <span>+6.25%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-diageo></app-svg-diageo>
-        <div class="item-title">Diageo</div>
-        <div class="label">
-            <p>250.65</p>
-            <span>+1.25%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-statickit></app-svg-statickit>
-        <div class="item-title">StaticKit</div>
-        <div class="label">
-            <p>250.65</p>
-            <span>-3.38%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-statamic></app-svg-statamic>
-        <div class="item-title">Statamic</div>
-        <div class="label">
-            <p>5,040.85</p>
-            <span>-3.11%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-mirage></app-svg-mirage>
-        <div class="item-title">Mirage</div>
-        <div class="label">
-            <p>140.44</p>
-            <span>+9.09%</span>
-        </div>
-    </div>
-    <div class="item-container">
-        <app-svg-reversable></app-svg-reversable>
-        <div class="item-title">Reversable</div>
-        <div class="label">
-            <p>550.60</p>
-            <span>-1.25%</span>
+            <p>{{ item.price }}</p>
+            <span [ngStyle]="item.change > 0 ? {'color': 'rgb(168, 85, 247)'} : null">
+                {{ item.change > 0 ? '+' + item.change + '%' : item.change + '%' }}
+            </span>
         </div>
     </div>
 </div>
