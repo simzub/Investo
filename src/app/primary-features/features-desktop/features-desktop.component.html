@@ -29,7 +29,9 @@
         </div>
     </div>
     <div class="phone">
-        <app-svg-spinner-big></app-svg-spinner-big>
+        <div class="phone-background">
+            <app-svg-spinner-big></app-svg-spinner-big>
+        </div>
         <div class="phone-main">
             <app-phone-frame>
                 <div class="phone-content" [@headerAnimation]="activeIndex" *ngIf="activeIndex===0">
