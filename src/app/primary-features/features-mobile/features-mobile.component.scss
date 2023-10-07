@@ -58,6 +58,33 @@
   max-width: 23rem;
 }
 .content-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(38, 38, 38, 0.95);
+  padding: 1.5rem;
+  backdrop-filter: blur(00.5rem);
+  @media (min-width: $breakpoint-sm) {
+    padding: 2.5rem;
+  }
+  h3 {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: white;
+    @media (min-width: $breakpoint-sm) {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  }
+  p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: rgb(163 163 163);
+  }
 }
 .buttons {
   margin-top: 1.5rem;
@@ -72,5 +99,8 @@
     background-color: rgb(115 115 115);
     cursor: pointer;
     border: 0;
+    &.active-button {
+      background-color: rgb(212 212 212);
+    }
   }
 }

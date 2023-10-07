@@ -7,7 +7,12 @@
                     <app-phone-content-invite></app-phone-content-invite>
                 </app-phone-frame>
             </div>
-            <div class="content-description"></div>
+            <div class="content-description">
+                <app-svg-device-user></app-svg-device-user>
+                <h3>Invite friends for better returns</h3>
+                <p>For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10
+                    seconds if you invite an insider.</p>
+            </div>
         </div>
     </div>
     <div class="slide">
@@ -18,7 +23,12 @@
                     <app-phone-content-stocks></app-phone-content-stocks>
                 </app-phone-frame>
             </div>
-            <div class="content-description"></div>
+            <div class="content-description">
+                <app-svg-device-notification></app-svg-device-notification>
+                <h3>Notifications on stock dips</h3>
+                <p>Get a push notification every time we find out something that’s going to lower the share price on
+                    your holdings so you can sell before the information hits the public markets.</p>
+            </div>
         </div>
     </div>
     <div class="slide">
@@ -30,12 +40,20 @@
                     <app-phone-content-invest></app-phone-content-invest>
                 </app-phone-frame>
             </div>
-            <div class="content-description"></div>
+            <div class="content-description">
+                <app-svg-device-touch></app-svg-device-touch>
+                <h3>Invest what you want</h3>
+                <p>We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity
+                    can never be traced back to you.</p>
+            </div>
         </div>
     </div>
 </div>
 <div class="buttons">
-    <button type="button" aria-label="Go to slide 1"></button>
-    <button type="button" aria-label="Go to slide 2"></button>
-    <button type="button" aria-label="Go to slide 3"></button>
+    <button type="button" aria-label="Go to slide 1" [ngClass]="{'active-button': activeSlideIndex === 0}"
+        (click)="setActiveSlide(0)"></button>
+    <button type="button" aria-label="Go to slide 2" [ngClass]="{'active-button': activeSlideIndex === 1}"
+        (click)="setActiveSlide(1)"></button>
+    <button type="button" aria-label="Go to slide 3" [ngClass]="{'active-button': activeSlideIndex === 2}"
+        (click)="setActiveSlide(2)"></button>
 </div>
