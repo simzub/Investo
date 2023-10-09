@@ -19,9 +19,9 @@ import { SvgPlusComponent } from 'src/assets/svg/svg-plus/svg-plus.component';
 import { PrimaryFeaturesComponent } from './primary-features/primary-features.component';
 import { FeaturesMobileComponent } from './primary-features/features-mobile/features-mobile.component';
 import { FeaturesDesktopComponent } from './primary-features/features-desktop/features-desktop.component';
-import { SvgDeviceNotificationComponent } from 'src/assets/svg/svg-device-notification/svg-device-notification.component';
-import { SvgDeviceTouchComponent } from 'src/assets/svg/svg-device-touch/svg-device-touch.component';
-import { SvgDeviceUserComponent } from 'src/assets/svg/svg-device-user/svg-device-user.component';
+import { SvgDeviceNotificationComponent } from 'src/assets/svg/device/svg-device-notification/svg-device-notification.component';
+import { SvgDeviceTouchComponent } from 'src/assets/svg/device/svg-device-touch/svg-device-touch.component';
+import { SvgDeviceUserComponent } from 'src/assets/svg/device/svg-device-user/svg-device-user.component';
 import { PhoneContentInviteComponent } from './primary-features/phone-content/phone-content-invite/phone-content-invite.component';
 import { PhoneContentStocksComponent } from './primary-features/phone-content/phone-content-stocks/phone-content-stocks.component';
 import { PhoneContentInvestComponent } from './primary-features/phone-content/phone-content-invest/phone-content-invest.component';
@@ -35,6 +35,13 @@ import { SvgStatamicComponent } from 'src/assets/svg/stocks/svg-statamic/svg-sta
 import { SvgMirageComponent } from 'src/assets/svg/stocks/svg-mirage/svg-mirage.component';
 import { SvgReversableComponent } from 'src/assets/svg/stocks/svg-reversable/svg-reversable.component';
 import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-graph.component';
+import { SecondaryFeaturesComponent } from './secondary-features/secondary-features.component';
+import { SvgDeviceArrowComponent } from 'src/assets/svg/device/svg-device-arrow/svg-device-arrow.component';
+import { SvgDeviceCardsComponent } from 'src/assets/svg/device/svg-device-cards/svg-device-cards.component';
+import { SvgDeviceChartComponent } from 'src/assets/svg/device/svg-device-chart/svg-device-chart.component';
+import { SvgDeviceClockComponent } from 'src/assets/svg/device/svg-device-clock/svg-device-clock.component';
+import { SvgDeviceListComponent } from 'src/assets/svg/device/svg-device-list/svg-device-list.component';
+import { SvgDeviceLockComponent } from 'src/assets/svg/device/svg-device-lock/svg-device-lock.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +70,12 @@ import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-graph.component'
     SvgStatamicComponent,
     SvgMirageComponent,
     SvgReversableComponent,
+    SvgDeviceArrowComponent,
+    SvgDeviceCardsComponent,
+    SvgDeviceChartComponent,
+    SvgDeviceClockComponent,
+    SvgDeviceListComponent,
+    SvgDeviceLockComponent,
     IntroductionComponent,
     PhoneFrameComponent,
     PrimaryFeaturesComponent,
@@ -71,6 +84,7 @@ import { SvgGraphComponent } from 'src/assets/svg/svg-graph/svg-graph.component'
     PhoneContentInviteComponent,
     PhoneContentStocksComponent,
     PhoneContentInvestComponent,
+    SecondaryFeaturesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

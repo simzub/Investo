@@ -1,0 +1,25 @@
+<section>
+    <div class="layout">
+        <div class="header">
+            <h2>Now is the time to build your portfolio.</h2>
+            <p>With typical market returns, you have to start young to secure your future. With Investo, it’s never too
+                late to build your nest egg.</p>
+        </div>
+        <ul role="list">
+            <li *ngFor="let feature of features">
+                <ng-container [ngSwitch]="feature.icon">
+                    <app-svg-device-arrow *ngSwitchCase="'arrow'"></app-svg-device-arrow>
+                    <app-svg-device-cards *ngSwitchCase="'cards'"></app-svg-device-cards>
+                    <app-svg-device-clock *ngSwitchCase="'clock'"></app-svg-device-clock>
+                    <app-svg-device-list *ngSwitchCase="'list'"></app-svg-device-list>
+                    <app-svg-device-lock *ngSwitchCase="'lock'"></app-svg-device-lock>
+                    <app-svg-device-chart *ngSwitchCase="'chart'"></app-svg-device-chart>
+                </ng-container>
+                <h3>
+                    {{feature.name}}
+                </h3>
+                <p>{{feature.description}}</p>
+            </li>
+        </ul>
+    </div>
+</section>

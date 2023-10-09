@@ -10,7 +10,7 @@
             <div class="content-description">
                 <app-svg-device-user></app-svg-device-user>
                 <h3>Invite friends for better returns</h3>
-                <p>For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10
+                <p>For every friend you invite to Investo, you get insider notifications 5 seconds sooner. And it’s 10
                     seconds if you invite an insider.</p>
             </div>
         </div>
@@ -50,10 +50,7 @@
     </div>
 </div>
 <div class="buttons">
-    <button type="button" aria-label="Go to slide 1" [ngClass]="{'active-button': activeSlideIndex === 0}"
-        (click)="setActiveSlide(0)"></button>
-    <button type="button" aria-label="Go to slide 2" [ngClass]="{'active-button': activeSlideIndex === 1}"
-        (click)="setActiveSlide(1)"></button>
-    <button type="button" aria-label="Go to slide 3" [ngClass]="{'active-button': activeSlideIndex === 2}"
-        (click)="setActiveSlide(2)"></button>
+    <button type="button" [ngClass]="{'active-button': activeSlideIndex === 0}" (click)="setActiveSlide(0)"></button>
+    <button type="button" [ngClass]="{'active-button': activeSlideIndex === 1}" (click)="setActiveSlide(1)"></button>
+    <button type="button" [ngClass]="{'active-button': activeSlideIndex === 2}" (click)="setActiveSlide(2)"></button>
 </div>
