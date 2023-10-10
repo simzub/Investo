@@ -42,6 +42,7 @@ import { SvgDeviceChartComponent } from 'src/assets/svg/device/svg-device-chart/
 import { SvgDeviceClockComponent } from 'src/assets/svg/device/svg-device-clock/svg-device-clock.component';
 import { SvgDeviceListComponent } from 'src/assets/svg/device/svg-device-list/svg-device-list.component';
 import { SvgDeviceLockComponent } from 'src/assets/svg/device/svg-device-lock/svg-device-lock.component';
+import { CallToActionComponent } from './call-to-action/call-to-action.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +86,7 @@ import { SvgDeviceLockComponent } from 'src/assets/svg/device/svg-device-lock/sv
     PhoneContentStocksComponent,
     PhoneContentInvestComponent,
     SecondaryFeaturesComponent,
+    CallToActionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
