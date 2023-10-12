@@ -1,0 +1,26 @@
+<div class="column">
+    <div class="column-content">
+        <figure *ngFor="let review of reviews">
+            <blockquote>
+                <div>
+                    <app-svg-star *ngFor="let _ of [].constructor(review.stars)"></app-svg-star>
+                </div>
+                <p class="review-title">{{review.title}}</p>
+                <p class="review-description">{{review.description}}</p>
+            </blockquote>
+            <figcaption>{{review.author}}</figcaption>
+        </figure>
+    </div>
+    <div class="column-content-overlay">
+        <figure *ngFor="let review of reviews">
+            <blockquote>
+                <div>
+                    <app-svg-star *ngFor="let _ of [].constructor(review.stars)"></app-svg-star>
+                </div>
+                <p class="review-title">{{review.title}}</p>
+                <p class="review-description">{{review.description}}</p>
+            </blockquote>
+            <figcaption>{{review.author}}</figcaption>
+        </figure>
+    </div>
+</div>

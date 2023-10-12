@@ -43,6 +43,9 @@ import { SvgDeviceClockComponent } from 'src/assets/svg/device/svg-device-clock/
 import { SvgDeviceListComponent } from 'src/assets/svg/device/svg-device-list/svg-device-list.component';
 import { SvgDeviceLockComponent } from 'src/assets/svg/device/svg-device-lock/svg-device-lock.component';
 import { CallToActionComponent } from './call-to-action/call-to-action.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { SvgStarComponent } from 'src/assets/svg/svg-star/svg-star.component';
+import { ReviewsColumnComponent } from './reviews/reviews-column/reviews-column.component';
 
 @NgModule({
   declarations: [
@@ -77,6 +80,7 @@ import { CallToActionComponent } from './call-to-action/call-to-action.component
     SvgDeviceClockComponent,
     SvgDeviceListComponent,
     SvgDeviceLockComponent,
+    SvgStarComponent,
     IntroductionComponent,
     PhoneFrameComponent,
     PrimaryFeaturesComponent,
@@ -87,6 +91,8 @@ import { CallToActionComponent } from './call-to-action/call-to-action.component
     PhoneContentInvestComponent,
     SecondaryFeaturesComponent,
     CallToActionComponent,
+    ReviewsComponent,
+    ReviewsColumnComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

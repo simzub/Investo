@@ -1,0 +1,94 @@
+.column {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.column-content {
+  display: flex;
+  flex-direction: column;
+  animation: marquee 25s linear infinite;
+}
+.column-content-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  animation: marquee2 25s linear infinite;
+}
+
+figure {
+  margin: 2rem 0 0 0;
+  animation: fadeIn 0.5s linear forwards;
+  border-radius: 1.5rem;
+  background-color: white;
+  padding: 1.5rem;
+  opacity: 0;
+  box-shadow: 0 0 0 1px rgba(33, 37, 41, 0.05),
+    0 2px 4px 0 rgba(33, 37, 41, 0.05);
+}
+blockquote {
+  margin: 0;
+
+  color: rgb(23 23 23);
+  div {
+    display: flex;
+  }
+}
+figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(82 82 82);
+}
+figcaption::before {
+  content: "- ";
+}
+
+.review-title {
+  text-align: start;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.review-title::before {
+  content: "“";
+}
+.review-title::after {
+  content: "”";
+}
+
+.review-description {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes marquee2 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
