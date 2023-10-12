@@ -4,8 +4,10 @@
         <p class="layout-description">Thousands of people have doubled their net-worth in the last 30 days.</p>
         <div class="content-layout">
             <app-reviews-column [reviews]="getTopReviews()"></app-reviews-column>
-            <app-reviews-column class="second-column" [reviews]="getMiddleReviews()"></app-reviews-column>
-            <app-reviews-column class="third-column" [reviews]="getBottomReviews()"></app-reviews-column>
+            <app-reviews-column class="second-column" [reviews]="getMiddleReviews()"
+                animationDuration="35s"></app-reviews-column>
+            <app-reviews-column class="third-column" [reviews]="getBottomReviews()"
+                animationDuration="30s"></app-reviews-column>
             <div class="top-gradient"></div>
             <div class="bottom-gradient"></div>
         </div>
