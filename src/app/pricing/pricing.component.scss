@@ -1,0 +1,153 @@
+@import "../../styles/variables.scss";
+
+@mixin options {
+  cursor: pointer;
+  width: 4rem;
+  text-align: center;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(64 64 64);
+}
+
+.section {
+  background-color: rgb(245 245 245);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-top: 0.0625rem solid rgb(229 229 229);
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media (min-width: $breakpoint-sm) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.info {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -0.025em;
+  color: rgb(23 23 23);
+}
+
+.description {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: rgb(82 82 82);
+}
+
+.options {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.options-container {
+  display: flex;
+  border: 0.0625rem solid rgb(212 212 212);
+  border-radius: 0.5rem;
+}
+
+.monthly-option {
+  @include options;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.annually-option {
+  @include options;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.plans-layout {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  display: grid;
+  max-width: 40rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: flex-start;
+  column-gap: 2rem;
+  row-gap: 2.5rem;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: 5rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    max-width: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: white;
+}
+
+.plan-title {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgb(23, 23, 23);
+  margin: 0;
+}
+
+.plan-title-text {
+  margin-left: 1rem;
+}
+
+.plan-price {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  display: flex;
+  font-size: 2rem;
+  line-height: 3rem;
+  letter-spacing: -0.025em;
+  color: rgb(23 23 23);
+}
+
+.plan-description {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: rgb(64 64 64);
+}
+
+.plan-features {
+  order: 9999;
+  margin-top: 1.5rem;
+}

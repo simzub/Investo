@@ -1,0 +1,50 @@
+<section class="section">
+    <div class="layout">
+        <div class="info">
+            <h2 class="title">Flat pricing, no management fees.</h2>
+            <p class="description">Whether you’re one person trying to get ahead or a big firm trying to take
+                over the world, we’ve got a plan for you.</p>
+        </div>
+        <div class="options">
+            <div class="options-container">
+                <div class="monthly-option" [@optionState]="activeOption === 'monthly' ? 'active' : 'inactive'"
+                    (click)="setActiveOption('monthly')">
+                    Monthly
+                </div>
+                <div class="annually-option" [@optionState]="activeOption === 'annually' ? 'active' : 'inactive'"
+                    (click)="setActiveOption('annually')">
+                    Annually
+                </div>
+            </div>
+        </div>
+        <div class="plans-layout">
+            <section class="plan">
+                <h3 class="plan-title">
+                    <app-svg-logo size="small" fill="rgb(212,212,212)"></app-svg-logo>
+                    <span class="plan-title-text">Starter</span>
+                </h3>
+                <p class="plan-price">$0</p>
+                <p class="plan-description">You’re new to investing but want to do it right. Get started for free.</p>
+                <div class="plan-features">
+                    <ul class="plan-features-list">
+                        <li class="feature">
+                            <span class="feature-description"></span>
+                        </li>
+                        <li class="feature">
+                            <span class="feature-description"></span>
+                        </li>
+                        <li class="feature">
+                            <span class="feature-description"></span>
+                        </li>
+                        <li class="feature">
+                            <span class="feature-description"></span>
+                        </li>
+                    </ul>
+                </div>
+                <a class="plan-link"></a>
+            </section>
+            <section class="plan"></section>
+            <section class="plan"></section>
+        </div>
+    </div>
+</section>

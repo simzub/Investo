@@ -46,6 +46,7 @@ import { CallToActionComponent } from './call-to-action/call-to-action.component
 import { ReviewsComponent } from './reviews/reviews.component';
 import { SvgStarComponent } from 'src/assets/svg/svg-star/svg-star.component';
 import { ReviewsColumnComponent } from './reviews/reviews-column/reviews-column.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +94,7 @@ import { ReviewsColumnComponent } from './reviews/reviews-column/reviews-column.
     CallToActionComponent,
     ReviewsComponent,
     ReviewsColumnComponent,
+    PricingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
