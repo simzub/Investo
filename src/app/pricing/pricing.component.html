@@ -18,33 +18,11 @@
             </div>
         </div>
         <div class="plans-layout">
-            <section class="plan">
-                <h3 class="plan-title">
-                    <app-svg-logo size="small" fill="rgb(212,212,212)"></app-svg-logo>
-                    <span class="plan-title-text">Starter</span>
-                </h3>
-                <p class="plan-price">$0</p>
-                <p class="plan-description">You’re new to investing but want to do it right. Get started for free.</p>
-                <div class="plan-features">
-                    <ul class="plan-features-list">
-                        <li class="feature">
-                            <span class="feature-description"></span>
-                        </li>
-                        <li class="feature">
-                            <span class="feature-description"></span>
-                        </li>
-                        <li class="feature">
-                            <span class="feature-description"></span>
-                        </li>
-                        <li class="feature">
-                            <span class="feature-description"></span>
-                        </li>
-                    </ul>
-                </div>
-                <a class="plan-link"></a>
-            </section>
-            <section class="plan"></section>
-            <section class="plan"></section>
+            <app-subscription-card [subscriptionData]="subscriptionData[0]"></app-subscription-card>
+            <app-subscription-card [subscriptionData]="subscriptionData[1]" logoFill="rgb(115,115,115)"
+                [activeOption]="activeOption"></app-subscription-card>
+            <app-subscription-card [subscriptionData]="subscriptionData[2]" colorMode="dark" logoFill="rgb(168,85,247)"
+                [activeOption]="activeOption"></app-subscription-card>
         </div>
     </div>
 </section>

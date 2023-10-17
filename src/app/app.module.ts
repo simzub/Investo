@@ -47,6 +47,8 @@ import { ReviewsComponent } from './reviews/reviews.component';
 import { SvgStarComponent } from 'src/assets/svg/svg-star/svg-star.component';
 import { ReviewsColumnComponent } from './reviews/reviews-column/reviews-column.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { SubscriptionCardComponent } from './pricing/subscription-card/subscription-card.component';
+import { SvgCheckComponent } from 'src/assets/svg/svg-check/svg-check.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +83,7 @@ import { PricingComponent } from './pricing/pricing.component';
     SvgDeviceClockComponent,
     SvgDeviceListComponent,
     SvgDeviceLockComponent,
+    SvgCheckComponent,
     SvgStarComponent,
     IntroductionComponent,
     PhoneFrameComponent,
@@ -95,6 +98,7 @@ import { PricingComponent } from './pricing/pricing.component';
     ReviewsComponent,
     ReviewsColumnComponent,
     PricingComponent,
+    SubscriptionCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

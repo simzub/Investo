@@ -1,0 +1,20 @@
+<section [ngClass]="{'dark-background': colorMode==='dark'}">
+    <h3 class="title">
+        <app-svg-logo size="small" fill={{logoFill}}></app-svg-logo>
+        <span [ngClass]="{'dark-text-white': colorMode==='dark'}" class="title-text">{{subscriptionData.title}}</span>
+    </h3>
+    <p [ngClass]="{'dark-text-white': colorMode==='dark'}" class="price" *ngIf="activeOption === 'monthly'">{{
+        subscriptionData.monthlyPrice }}</p>
+    <p [ngClass]="{'dark-text-white': colorMode==='dark'}" class="price" *ngIf="activeOption === 'annually'">{{
+        subscriptionData.annuallyPrice }}</p>
+    <p [ngClass]="{'dark-text': colorMode==='dark'}" class="description">{{subscriptionData.description}}</p>
+    <div class="features">
+        <ul [ngClass]="{'dark-list': colorMode==='dark'}" class="features-list">
+            <li class="feature" *ngFor="let feature of subscriptionData.features">
+                <app-svg-check></app-svg-check>
+                <span [ngClass]=" {'dark-text': colorMode==='dark' }">{{ feature }}</span>
+            </li>
+        </ul>
+    </div>
+    <a [ngClass]="{'dark-link': colorMode==='dark'}" class="link">{{subscriptionData.linkText}}</a>
+</section>
