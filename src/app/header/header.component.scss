@@ -58,7 +58,7 @@
   font-weight: bold;
 }
 
-.menu-container {
+.nav-container {
   display: none;
   align-items: center;
   height: 100%;
@@ -68,10 +68,11 @@
   }
 }
 
-.menu-item {
+.nav-item {
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  text-decoration: none;
   height: 100%;
   padding: 0.5rem 0.75rem;
   margin: -0.5rem -0.75rem;
@@ -88,7 +89,7 @@
   }
 }
 
-.menu-text {
+.nav-text {
   position: relative;
 }
 
