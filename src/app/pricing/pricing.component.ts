@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
     trigger('optionState', [
       state(
         'active',
-        style({ backgroundColor: 'rgb(168 85 247)', color: 'white' })
+        style({ backgroundColor: 'rgb(147 51 234)', color: 'white' })
       ),
       state(
         'inactive',

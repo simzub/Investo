@@ -55,7 +55,7 @@ export class IntroductionComponent {
 
   isHovering: boolean = false;
   currentObjectId: number = this.data.length - 1;
-  percentageStyle: { [key: string]: string } = { color: 'rgb(168 85 247)' };
+  percentageStyle: { [key: string]: string } = { color: 'rgb(147 51 234)' };
 
   handleHoverChange(eventData: { isHovering: boolean; objectId: number }) {
     this.isHovering = eventData.isHovering;
@@ -67,7 +67,7 @@ export class IntroductionComponent {
       if (selectedData.percentage < 0) {
         this.percentageStyle = { color: 'rgb(107, 114, 128)' };
       } else {
-        this.percentageStyle = { color: 'rgb(168 85 247)' };
+        this.percentageStyle = { color: 'rgb(147 51 234)' };
       }
     }
   }

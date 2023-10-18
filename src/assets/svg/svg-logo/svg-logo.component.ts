@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SvgLogoComponent {
   @Input() size: 'big' | 'small' = 'big';
-  @Input() fill: string = 'rgb(168 85 247)';
+  @Input() fill: string = 'rgb(147 51 234)';
 
   getSVGWidth(): string {
     return this.size === 'big' ? '40' : '24';

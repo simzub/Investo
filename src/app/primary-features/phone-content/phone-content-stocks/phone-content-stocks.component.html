@@ -20,7 +20,7 @@
         <div class="item-title">{{ item.title }}</div>
         <div class="label">
             <p>{{ item.price }}</p>
-            <span [ngStyle]="item.change > 0 ? {'color': 'rgb(168, 85, 247)'} : null">
+            <span [ngStyle]="item.change > 0 ? {'color': 'rgb(147 51 234)'} : null">
                 {{ item.change > 0 ? '+' + item.change + '%' : item.change + '%' }}
             </span>
         </div>
