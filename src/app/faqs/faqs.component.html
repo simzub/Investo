@@ -1,3 +1,16 @@
 <section id="faqs">
-
+    <div class="layout">
+        <div class="header">
+            <h2 class="title">Frequently asked questions</h2>
+            <p class="description">
+                If you have anything else you want to ask,
+                <a href="mailto:info@example.com">reach out to us</a>.
+            </p>
+        </div>
+        <ul role="list" class="list">
+            <app-faqs-list [faqs]="faqs[0]"></app-faqs-list>
+            <app-faqs-list [faqs]="faqs[1]"></app-faqs-list>
+            <app-faqs-list [faqs]="faqs[2]"></app-faqs-list>
+        </ul>
+    </div>
 </section>

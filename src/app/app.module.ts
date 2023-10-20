@@ -52,6 +52,7 @@ import { SvgCheckComponent } from 'src/assets/svg/svg-check/svg-check.component'
 import { FaqsComponent } from './faqs/faqs.component';
 import { FooterComponent } from './footer/footer.component';
 import { SvgQrFrameComponent } from 'src/assets/svg/svg-qr-frame/svg-qr-frame.component';
+import { FaqsListComponent } from './faqs/faqs-list/faqs-list.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +106,7 @@ import { SvgQrFrameComponent } from 'src/assets/svg/svg-qr-frame/svg-qr-frame.co
     SubscriptionCardComponent,
     FaqsComponent,
     FooterComponent,
+    FaqsListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

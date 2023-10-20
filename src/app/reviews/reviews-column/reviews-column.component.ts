@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Renderer2, ElementRef } from '@angular/core';
+import { Review } from '../reviews.component';
 
 @Component({
   selector: 'app-reviews-column',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit, Renderer2, ElementRef } from '@angular/core';
   styleUrls: ['./reviews-column.component.scss'],
 })
 export class ReviewsColumnComponent implements OnInit {
-  @Input() reviews: any[] = [];
+  @Input() reviews: Review[] = [];
   @Input() animationDuration: string = '25s';
 
   constructor(private renderer: Renderer2, private el: ElementRef) {}

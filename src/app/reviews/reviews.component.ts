@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-interface Review {
+export interface Review {
   stars: number;
   title: string;
   description: string;
