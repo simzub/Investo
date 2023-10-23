@@ -53,6 +53,10 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { FooterComponent } from './footer/footer.component';
 import { SvgQrFrameComponent } from 'src/assets/svg/svg-qr-frame/svg-qr-frame.component';
 import { FaqsListComponent } from './faqs/faqs-list/faqs-list.component';
+import { AuthFormComponent } from './shared/auth-form/auth-form.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +111,10 @@ import { FaqsListComponent } from './faqs/faqs-list/faqs-list.component';
     FaqsComponent,
     FooterComponent,
     FaqsListComponent,
+    AuthFormComponent,
+    RegisterComponent,
+    LoginComponent,
+    LandingPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
