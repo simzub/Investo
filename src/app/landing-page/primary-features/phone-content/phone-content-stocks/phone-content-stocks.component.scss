@@ -1,4 +1,4 @@
-@import ".../../../../../../styles/variables.scss";
+@import ".../../../../../../../styles/variables.scss";
 
 .description {
   margin-top: 1.5rem;
@@ -29,25 +29,44 @@
   border-top-right-radius: 1rem;
   background-color: white;
   height: 32.5rem;
+  overflow-y: hidden;
 }
 
 .item-container {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-bottom: 0.0625rem solid rgb(229 229 229);
 }
 
-.items-layout {
-  > *:not(:first-child) {
-    margin-top: 1rem;
-  }
+.item-logo {
+  flex: none;
+  border-radius: 9999px;
 }
 
-.label-title {
+.item-title {
   font-size: 0.875rem;
   line-height: 1.5rem;
-  color: rgb(115 115 115);
+  color: rgb(23 23 23);
+  flex: 1 1 auto;
+}
+
+.label {
+  flex: none;
+  text-align: right;
+  p {
+    margin: 0;
+    color: rgb(23 23 23);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  span {
+    line-height: 1.25rem;
+    font-size: 0.75rem;
+    color: rgb(115 115 115);
+  }
 }
 
 .label-content {
@@ -62,7 +81,7 @@
 .button {
   margin-top: 1.5rem;
   border-radius: $rounded-large;
-  background-color: rgb(147 51 234);
+  background-color: rgb(168, 85, 247);
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
