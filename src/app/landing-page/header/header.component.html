@@ -8,16 +8,16 @@
                     </div>
                 </a>
                 <div class="nav-container">
-                    <a class="nav-item" href="/#features">
+                    <a class="nav-item" routerLink="." fragment="features">
                         <span class="nav-text">Features</span>
                     </a>
-                    <a class="nav-item" href="/#reviews">
+                    <a class="nav-item" routerLink="." fragment="reviews">
                         <span class="nav-text">Reviews</span>
                     </a>
-                    <a class="nav-item" href="/#pricing">
+                    <a class="nav-item" routerLink="." fragment="pricing">
                         <span class="nav-text">Pricing</span>
                     </a>
-                    <a class="nav-item" href="/#faqs">
+                    <a class="nav-item" routerLink="." fragment="faqs">
                         <span class="nav-text">FAQs</span>
                     </a>
                 </div>
@@ -41,28 +41,28 @@
                         <div class="modal-content" [@slideInOut]="animationState">
 
                             <div class="small-screen-navigation">
-                                <a class="small-screen-item">
+                                <a class="small-screen-item" routerLink="." fragment="features" (click)="closeModal()">
                                     Features
                                 </a>
-                                <a class="small-screen-item">
+                                <a class="small-screen-item" routerLink="." fragment="reviews" (click)="closeModal()">
                                     Reviews
                                 </a>
-                                <a class="small-screen-item">
+                                <a class="small-screen-item" routerLink="." fragment="pricing" (click)="closeModal()">
                                     Pricing
                                 </a>
-                                <a class="small-screen-item">
+                                <a class="small-screen-item" routerLink="." fragment="faqs" (click)="closeModal()">
                                     FAQs
                                 </a>
                             </div>
                             <div class="small-screen-links">
-                                <a class="small-screen-login-link">Log in</a>
+                                <a routerLink="/login" class="small-screen-login-link">Log in</a>
                                 <a class="small-screen-download-link">Download the app</a>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <a class="login-link">Log in</a>
+                <a routerLink="/login" class="login-link">Log in</a>
                 <a class="download-link">Download</a>
             </div>
         </div>

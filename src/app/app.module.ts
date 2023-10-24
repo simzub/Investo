@@ -57,6 +57,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CallToActionComponent } from './landing-page/call-to-action/call-to-action.component';
 import { FeaturesMobileComponent } from './landing-page/primary-features/features-mobile/features-mobile.component';
 import { FeaturesDesktopComponent } from './landing-page/primary-features/features-desktop/features-desktop.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SvgSpinnerStaticComponent } from 'src/assets/svg/svg-spinner-static/svg-spinner-static.component';
 
 @NgModule({
   declarations: [
@@ -94,6 +96,7 @@ import { FeaturesDesktopComponent } from './landing-page/primary-features/featur
     SvgDeviceLockComponent,
     SvgCheckComponent,
     SvgStarComponent,
+    SvgSpinnerStaticComponent,
     IntroductionComponent,
     PhoneFrameComponent,
     PrimaryFeaturesComponent,
@@ -115,6 +118,7 @@ import { FeaturesDesktopComponent } from './landing-page/primary-features/featur
     RegisterComponent,
     LoginComponent,
     LandingPageComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

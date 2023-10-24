@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="container">
+    <main>
+        <div class="content">
+            <a class="logo" routerLink="/"><app-svg-logo></app-svg-logo>
+                <div class="app-text">Investo
+                </div>
+            </a>
+            <div class="section">
+                <app-svg-spinner-static class="background"></app-svg-spinner-static>
+                <h1 class="heading">Sign in to account</h1>
+                <p class="info">Don’t have an account? <a routerLink="/register">Sign up</a> for a free trial.</p>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                    <div class="form-inputs">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="text" class="form-input" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-input" id="password" name="password">
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-button">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
