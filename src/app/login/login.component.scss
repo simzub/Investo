@@ -59,17 +59,18 @@ a {
 }
 
 .background {
-  // position: absolute;
-  // left: -50%;
-  // z-index: -10;
-  // top: -1.75rem;
-  // height: 49rem;
-  // transform: -translateX(50%);
-  // mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
-  // @media (min-width: $breakpoint-sm) {
-  // top: -2.25rem;
-  // height: auto;
-  // }
+  position: absolute;
+  left: -50%;
+  z-index: -10;
+  top: -1.75rem;
+  height: 49rem;
+  width: 49rem;
+  transform: -translateX(50%);
+  mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
+  @media (min-width: $breakpoint-sm) {
+    top: -2.25rem;
+    height: auto;
+  }
 }
 
 .heading {
@@ -89,4 +90,92 @@ a {
   font-size: 1.125rem;
   line-height: 2rem;
   color: rgb(82 82 82);
+}
+
+.register-link {
+  color: rgb(147 51 234);
+}
+
+.form-container {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: 2.5rem;
+  flex: 1 1 auto;
+  background-color: white;
+  padding: 2.5rem 1rem 2.5rem 1rem;
+  box-shadow: 0 25px 50px -12px rgb(17 24 39 / 0.1);
+  @media (min-width: $breakpoint-sm) {
+    margin-left: 0;
+    margin-right: 0;
+    flex: none;
+    border-radius: 2.5rem;
+    padding: 6rem;
+  }
+}
+
+.form-inputs {
+  > *:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgb(23 23 23);
+}
+
+.form-input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  appearance: none;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid rgb(229 229 229);
+  background-color: white;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  color: rgb(23 23 23);
+
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.form-input::placeholder {
+  color: rgb(161 161 170);
+}
+
+.form-input:focus {
+  border-color: rgb(147 51 234);
+  box-shadow: 0 0 0 1px rgb(147 51 234);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.submit-button {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(147 51 234);
+  color: white;
+  margin-top: 2rem;
+  width: 100%;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgb(126 34 206);
+  }
 }

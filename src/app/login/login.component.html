@@ -8,21 +8,22 @@
             <div class="section">
                 <app-svg-spinner-static class="background"></app-svg-spinner-static>
                 <h1 class="heading">Sign in to account</h1>
-                <p class="info">Don’t have an account? <a routerLink="/register">Sign up</a> for a free trial.</p>
+                <p class="info">Don’t have an account? <a class="register-link" routerLink="/register">Sign up</a> for a
+                    free trial.</p>
             </div>
             <div class="form-container">
-                <form class="form">
+                <form>
                     <div class="form-inputs">
-                        <div class="form-group">
+                        <div>
                             <label for="email" class="form-label">Email address</label>
-                            <input type="text" class="form-input" id="email" name="email">
+                            <input required type="text" class="form-input" id="email" name="email">
                         </div>
-                        <div class="form-group">
+                        <div>
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-input" id="password" name="password">
+                            <input required type="password" class="form-input" id="password" name="password">
                         </div>
                     </div>
-                    <button type="submit" class="submit-button">Sign In</button>
+                    <button type="submit" class="submit-button">Sign in to account</button>
                 </form>
             </div>
         </div>
