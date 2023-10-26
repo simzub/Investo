@@ -1,1 +1,22 @@
-<p>auth-form works!</p>
+<div class="container">
+    <main>
+        <div class="content">
+            <a class="logo" routerLink="/"><app-svg-logo></app-svg-logo>
+                <div class="app-text">Investo
+                </div>
+            </a>
+            <div class="section">
+                <app-svg-spinner-static class="background"></app-svg-spinner-static>
+                <h1 class="heading">{{header}}</h1>
+                <p class="info">{{descriptionBefore}} <a class="link" routerLink="{{routeLink}}">{{link}}</a>
+                    {{descriptionAfter}}</p>
+            </div>
+            <div class="form-container">
+                <form>
+                    <ng-content></ng-content>
+                    <button type="submit" class="submit-button">{{submitText}}</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>

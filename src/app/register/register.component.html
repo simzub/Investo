@@ -1,1 +1,30 @@
-<p>register works!</p>
+<app-auth-form header="Sign up for an account" routeLink="/login" descriptionBefore="Already registered?"
+    descriptionAfter="to your account." link="Sign in" submitText="Get started today">
+    <div class="form-inputs">
+        <div>
+            <label for="firstName" class="form-label">First Name</label>
+            <input required type="text" class="form-input" id="firstName" name="firstName">
+        </div>
+        <div>
+            <label for="lastName" class="form-label">Password</label>
+            <input required type="password" class="form-input" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email address</label>
+            <input required type="email" class="form-input" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input required type="password" class="form-input" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label for="select" class="form-label">How did you hear about us?</label>
+            <select class="form-input">
+                <option>Time-Traveling Parrot Gossip</option>
+                <option>Alien Abduction TV Ad</option>
+                <option>Fortune Telling Banana Peels</option>
+                <option>Bigfoot's Social Media Posts</option>
+            </select>
+        </div>
+    </div>
+</app-auth-form>

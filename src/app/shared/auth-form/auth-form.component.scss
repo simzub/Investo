@@ -1,0 +1,134 @@
+@import "../../../styles/variables.scss";
+.container {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  padding-top: 4rem;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  max-width: 40rem;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+.logo {
+  color: black;
+  display: flex;
+  gap: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.section {
+  position: relative;
+  margin-top: 3rem;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: 4rem;
+  }
+}
+
+.background {
+  position: absolute;
+  left: -96%;
+  z-index: -10;
+  top: -1.75rem;
+  mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
+  @media (min-width: $breakpoint-sm) {
+    top: -2.25rem;
+    height: auto;
+  }
+}
+
+.heading {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: rgb(23 23 23);
+}
+
+.info {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: rgb(82 82 82);
+}
+
+.link {
+  color: rgb(147 51 234);
+}
+
+.form-container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: 2.5rem;
+  flex: 1 1 auto;
+  background-color: white;
+  padding: 2.5rem 1rem 2.5rem 1rem;
+  box-shadow: 0 25px 50px -12px rgb(17 24 39 / 0.1);
+  @media (min-width: $breakpoint-sm) {
+    max-width: 37rem;
+    margin-left: 0;
+    margin-right: 0;
+    flex: none;
+    border-radius: 2.5rem;
+    padding: 6rem;
+  }
+}
+
+.submit-button {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(147 51 234);
+  color: white;
+  margin-top: 2rem;
+  width: 100%;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgb(126 34 206);
+  }
+}
