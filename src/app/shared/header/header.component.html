@@ -2,22 +2,22 @@
     <nav>
         <div class="header-container">
             <div class="menu-section">
-                <a class="app-logo">
+                <a class="app-logo" routerLink="/">
                     <app-svg-logo></app-svg-logo>
                     <div class="app-text">Investo
                     </div>
                 </a>
                 <div class="nav-container">
-                    <a class="nav-item" routerLink="." fragment="features">
+                    <a class="nav-item" routerLink="/" fragment="features">
                         <span class="nav-text">Features</span>
                     </a>
-                    <a class="nav-item" routerLink="." fragment="reviews">
+                    <a class="nav-item" routerLink="/" fragment="reviews">
                         <span class="nav-text">Reviews</span>
                     </a>
-                    <a class="nav-item" routerLink="." fragment="pricing">
+                    <a class="nav-item" routerLink="/" fragment="pricing">
                         <span class="nav-text">Pricing</span>
                     </a>
-                    <a class="nav-item" routerLink="." fragment="faqs">
+                    <a class="nav-item" routerLink="/" fragment="faqs">
                         <span class="nav-text">FAQs</span>
                     </a>
                 </div>
@@ -41,16 +41,16 @@
                         <div class="modal-content" [@slideInOut]="animationState">
 
                             <div class="small-screen-navigation">
-                                <a class="small-screen-item" routerLink="." fragment="features" (click)="closeModal()">
+                                <a class="small-screen-item" routerLink="/" fragment="features" (click)="closeModal()">
                                     Features
                                 </a>
-                                <a class="small-screen-item" routerLink="." fragment="reviews" (click)="closeModal()">
+                                <a class="small-screen-item" routerLink="/" fragment="reviews" (click)="closeModal()">
                                     Reviews
                                 </a>
-                                <a class="small-screen-item" routerLink="." fragment="pricing" (click)="closeModal()">
+                                <a class="small-screen-item" routerLink="/" fragment="pricing" (click)="closeModal()">
                                     Pricing
                                 </a>
-                                <a class="small-screen-item" routerLink="." fragment="faqs" (click)="closeModal()">
+                                <a class="small-screen-item" routerLink="/" fragment="faqs" (click)="closeModal()">
                                     FAQs
                                 </a>
                             </div>

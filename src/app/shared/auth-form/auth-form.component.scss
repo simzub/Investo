@@ -29,6 +29,7 @@ main {
 a {
   text-decoration: none;
 }
+
 .logo {
   color: black;
   display: flex;
@@ -48,19 +49,21 @@ a {
   position: relative;
   margin-top: 3rem;
   @media (min-width: $breakpoint-sm) {
+    width: 100%;
     margin-top: 4rem;
   }
 }
 
 .background {
   position: absolute;
-  left: -96%;
+  left: -105%;
+  display: block;
   z-index: -10;
   top: -1.75rem;
   mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
   @media (min-width: $breakpoint-sm) {
     top: -2.25rem;
-    height: auto;
+    left: -35%;
   }
 }
 

@@ -1,0 +1,92 @@
+@import "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding: 5rem 1rem 5rem 1rem;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    padding: 8rem 1.5rem 8rem 1.5rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.background {
+  position: absolute;
+  top: -70%;
+  z-index: -10;
+  margin-top: 11rem;
+  width: 68.125rem;
+  mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
+}
+
+.error-code {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: rgb(23 23 23);
+}
+
+.error-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: rgb(23 23 23);
+}
+
+.error-message {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: rgb(82 82 82);
+}
+
+.home-link {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 2rem;
+  border-radius: $rounded-large;
+  align-items: center;
+  border: $border;
+  padding: 0.5rem 0.75rem;
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+  outline-width: 0.125rem;
+  outline-offset: 0.125rem;
+  text-decoration: none;
+  color: rgb(55 65 81);
+  cursor: pointer;
+  transition: border 0.3s;
+
+  &:hover {
+    border: $border-hover;
+  }
+}
