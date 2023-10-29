@@ -1,23 +1,12 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/helpers.scss";
 
 footer {
   border-top: 0.0625rem solid rgb(229 229 229);
 }
 
 .layout {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @media (min-width: $breakpoint-sm) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  @media (min-width: $breakpoint-lg) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  @extend .responsive-centered-layout;
 }
 
 .nav-section {
@@ -209,19 +198,15 @@ form {
 }
 
 .newsletter-button {
+  @extend .button;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   border: 0;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
   font-weight: 600;
   background-color: rgb(147 51 234);
   color: white;
   margin-left: 1rem;
-  cursor: pointer;
   flex: none;
   &:active {
     background-color: rgb(126 34 206);

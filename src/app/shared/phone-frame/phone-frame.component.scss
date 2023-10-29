@@ -1,8 +1,9 @@
+@import "../../../styles/helpers.scss";
+
 .container {
   position: relative;
   aspect-ratio: 366/729;
-  margin-left: auto;
-  margin-right: auto;
+  @extend .horizontal-center;
   width: 22.875rem;
 
   img {

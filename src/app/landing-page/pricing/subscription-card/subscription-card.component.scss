@@ -1,3 +1,5 @@
+@import "../../../../styles/helpers.scss";
+
 section {
   display: flex;
   flex-direction: column;
@@ -70,20 +72,13 @@ section {
 }
 
 .link {
+  @extend .button;
   display: inline-flex;
   justify-content: center;
-  border-radius: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
   margin-top: 1.5rem;
   font-weight: 600;
   outline-width: 2px;
   outline-offset: 2px;
-  cursor: pointer;
   background-color: rgb(31 41 55);
   color: white;
   transition: background-color 0.3s;

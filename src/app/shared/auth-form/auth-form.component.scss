@@ -1,4 +1,5 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/helpers.scss";
 .container {
   display: flex;
   min-height: 100%;
@@ -17,8 +18,7 @@ main {
 }
 
 .content {
-  margin-left: auto;
-  margin-right: auto;
+  @extend .horizontal-center;
   align-items: center;
   display: flex;
   width: 100%;
@@ -111,17 +111,10 @@ a {
 }
 
 .submit-button {
-  cursor: pointer;
+  @extend .button;
   display: inline-flex;
   justify-content: center;
-  border-radius: 0.5rem;
   border: 0;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
   font-weight: 600;
   position: relative;
   overflow: hidden;

@@ -1,4 +1,5 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/helpers.scss";
 
 section {
   padding-top: 5rem;
@@ -10,24 +11,11 @@ section {
 }
 
 .layout {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @media (min-width: $breakpoint-sm) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  @media (min-width: $breakpoint-lg) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  @extend .responsive-centered-layout;
 }
 
 .header {
-  margin-left: auto;
-  margin-right: auto;
+  @extend .horizontal-center;
   max-width: 40rem;
   @media (min-width: $breakpoint-sm) {
     text-align: center;
@@ -50,8 +38,7 @@ section {
 }
 
 ul {
-  margin-left: auto;
-  margin-right: auto;
+  @extend .horizontal-center;
   margin-top: 4rem;
   display: grid;
   max-width: 40rem;

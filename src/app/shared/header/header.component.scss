@@ -1,17 +1,14 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/helpers.scss";
 
 @mixin button-styles {
+  @extend .button;
   box-sizing: border-box;
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0.75rem;
-  border-radius: $rounded-large;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
   outline-width: 0.125rem;
   outline-offset: 0.125rem;
-  cursor: pointer;
   display: none;
   @media (min-width: $breakpoint-lg) {
     display: flex;
@@ -19,8 +16,7 @@
 }
 
 .header-container {
-  margin-left: auto;
-  margin-right: auto;
+  @extend .horizontal-center;
   max-width: 76rem;
   padding: 2rem 1rem;
   z-index: 50;
@@ -77,7 +73,7 @@
   height: 100%;
   padding: 0.5rem 0.75rem;
   margin: -0.5rem -0.75rem;
-  border-radius: $rounded-large;
+  border-radius: 0.5rem;
   font-size: $font-size-small;
   line-height: $line-height-small;
   cursor: pointer;
@@ -133,7 +129,7 @@
   margin: -0.5rem;
   display: inline-flex;
   align-items: center;
-  border-radius: $rounded-large;
+  border-radius: 0.5rem;
   cursor: pointer;
   border: none;
   padding: 0.5rem;

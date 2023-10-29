@@ -1,4 +1,5 @@
 @import "../../../styles/variables.scss";
+@import "../../../styles/helpers.scss";
 
 .intro-container {
   overflow: hidden;
@@ -18,20 +19,7 @@
 }
 
 .intro-content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 76rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  @media (min-width: $breakpoint-sm) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  @media (min-width: $breakpoint-lg) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+  @extend .responsive-centered-layout;
 }
 
 .intro-layout {
@@ -44,10 +32,9 @@
 }
 
 .intro-heading {
+  @extend .horizontal-center;
   position: relative;
   z-index: 10;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 42rem;
 
   @media (min-width: $breakpoint-lg) {
@@ -86,7 +73,7 @@
 }
 
 .intro-app {
-  border-radius: $rounded-large;
+  border-radius: 0.5rem;
   background-color: rgb(31 41 55);
   color: rgb(255 255 255);
   cursor: pointer;
@@ -98,19 +85,15 @@
 }
 
 .intro-link {
+  @extend .button;
   display: inline-flex;
   justify-content: center;
-  border-radius: $rounded-large;
   align-items: center;
   border: $border;
-  padding: 0.5rem 0.75rem;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
   outline-width: 0.125rem;
   outline-offset: 0.125rem;
   text-decoration: none;
   color: rgb(55 65 81);
-  cursor: pointer;
   transition: border 0.3s;
 
   &:hover {
@@ -271,19 +254,17 @@
 }
 .intro-phone-graph {
   margin-top: 0.75rem;
-  border-radius: $rounded-large;
+  border-radius: 0.5rem;
   background-color: rgb(249 250 251);
   border: 1px solid rgb(243 244 246);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 .intro-phone-btn {
+  @extend .button;
+  cursor: default;
   margin-top: 1rem;
-  border-radius: $rounded-large;
   background-color: rgb(147 51 234);
-  padding: 0.5rem 1rem 0.5rem 1rem;
   text-align: center;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
   font-weight: 600;
   color: white;
 }
@@ -330,8 +311,7 @@
     }
   }
   ul {
-    margin-left: auto;
-    margin-right: auto;
+    @extend .horizontal-center;
     padding: 0;
     margin-top: 2rem;
     display: flex;

@@ -39,20 +39,6 @@
   grid-column: 1/-1;
 }
 
-// .form-select {
-//   display: block;
-//   width: 100%;
-//   // appearance: none;
-//   border-radius: 0.5rem;
-
-//   &:focus {
-//     border-color: rgb(147 51 234);
-//     box-shadow: 0 0 0 1px rgb(147 51 234);
-//     outline: 2px solid transparent;
-//     outline-offset: 2px;
-//   }
-// }
-
 select {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23737373' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 0.5rem center;
