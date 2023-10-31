@@ -1,3 +1,4 @@
+@import "../../../../styles/variables.scss";
 @import "../../../../styles/helpers.scss";
 
 section {
@@ -13,8 +14,8 @@ section {
 .title {
   display: flex;
   align-items: center;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-weight: 600;
   color: rgb(23, 23, 23);
   margin: 0;
@@ -29,17 +30,17 @@ section {
   margin-top: 1.25rem;
   margin-bottom: 0;
   display: flex;
-  font-size: 2rem;
-  line-height: 3rem;
-  letter-spacing: -0.025em;
+  font-size: $font-size-3xl;
+  line-height: $line-height-3xl;
+  letter-spacing: $letter-spacing;
   color: rgb(23 23 23);
 }
 
 .description {
   margin-top: 0.75rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   color: rgb(64 64 64);
 }
 
@@ -54,11 +55,11 @@ section {
   padding: 0;
   margin-top: -0.5rem;
   margin-bottom: -0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   color: rgb(64 64 64);
   > *:not(:first-child) {
-    border-top: 0.0625rem solid rgb(229 229 229);
+    border-top: $border-width solid $border-color;
   }
 }
 
@@ -99,14 +100,14 @@ section {
 }
 
 .dark-link {
-  background-color: rgb(147 51 234);
+  background-color: $accent-color;
   &:hover {
-    background-color: rgb(126 34 206);
+    background-color: $darker-accent-color;
   }
 }
 .dark-list {
   > *:not(:first-child) {
-    border-top: 0.0625rem solid rgb(31 41 55);
+    border-top: $border-width solid rgb(31 41 55);
   }
 }
 

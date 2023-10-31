@@ -22,7 +22,7 @@ main {
   align-items: center;
   display: flex;
   width: 100%;
-  max-width: 40rem;
+  max-width: $half-content-width;
   flex-direction: column;
 }
 
@@ -31,11 +31,10 @@ a {
 }
 
 .logo {
+  @extend .horizontal-center;
   color: black;
   display: flex;
   gap: 0.75rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .app-text {
@@ -60,7 +59,7 @@ a {
   display: block;
   z-index: -10;
   top: -1.75rem;
-  mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
+  mask-image: $mask-image;
   @media (min-width: $breakpoint-sm) {
     top: -2.25rem;
     left: -35%;
@@ -70,10 +69,10 @@ a {
 .heading {
   margin: 0;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: $font-size-2xl;
+  line-height: $line-height-2xl;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
   color: rgb(23 23 23);
 }
 
@@ -81,13 +80,13 @@ a {
   margin-top: 0.75rem;
   margin-bottom: 0;
   text-align: center;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
   color: rgb(82 82 82);
 }
 
 .link {
-  color: rgb(147 51 234);
+  color: $accent-color;
 }
 
 .form-container {
@@ -98,7 +97,7 @@ a {
   margin-top: 2.5rem;
   flex: 1 1 auto;
   background-color: white;
-  padding: 2.5rem 1rem 2.5rem 1rem;
+  padding: 2.5rem 1rem;
   box-shadow: 0 25px 50px -12px rgb(17 24 39 / 0.1);
   @media (min-width: $breakpoint-sm) {
     max-width: 37rem;
@@ -118,13 +117,13 @@ a {
   font-weight: 600;
   position: relative;
   overflow: hidden;
-  background-color: rgb(147 51 234);
+  background-color: $accent-color;
   color: white;
   margin-top: 2rem;
   width: 100%;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: rgb(126 34 206);
+    background-color: $darker-accent-color;
   }
 }

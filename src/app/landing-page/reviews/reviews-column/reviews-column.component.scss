@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 .column {
   position: relative;
   overflow-y: hidden;
@@ -39,34 +41,34 @@ blockquote {
 }
 figcaption {
   margin-top: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   color: rgb(82 82 82);
-}
-figcaption::before {
-  content: "- ";
+
+  &::before {
+    content: "- ";
+  }
 }
 
 .review-title {
   text-align: start;
   margin-top: 1rem;
   margin-bottom: 0;
-  font-size: 1.125rem;
+  font-size: $font-size-lg;
   line-height: 1.5rem;
   font-weight: 600;
-}
-
-.review-title::before {
-  content: "“";
-}
-.review-title::after {
-  content: "”";
+  &::before {
+    content: "“";
+  }
+  &::after {
+    content: "”";
+  }
 }
 
 .review-description {
   margin-top: 0.75rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: $font-size-base;
   line-height: 1.75rem;
 }
 

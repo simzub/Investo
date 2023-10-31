@@ -7,8 +7,8 @@
   padding-right: 1rem;
   color: white;
   p {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     color: rgb(115 115 115);
     margin: 0;
     span {
@@ -18,8 +18,8 @@
 }
 
 .description-header {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: $font-size-2xl;
+  line-height: $line-height-2xl;
   color: white;
 }
 
@@ -33,10 +33,7 @@
 }
 
 .item-container {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .items-layout {
@@ -48,10 +45,10 @@
 .item-content {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.0625rem solid rgb(229 229 229);
+  border-bottom: $border-width solid $border-color;
   padding-bottom: 1rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   p {
     color: rgb(115 115 115);
     margin: 0;
@@ -66,7 +63,7 @@
 .button {
   @extend .button;
   margin-top: 1.5rem;
-  background-color: rgb(147 51 234);
+  background-color: $accent-color;
   text-align: center;
   font-weight: 600;
   color: white;

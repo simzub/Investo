@@ -38,7 +38,10 @@
                                         <div class="percentages-percentage"
                                             *ngIf="data[currentObjectId]?.percentage !== null"
                                             [ngStyle]="percentageStyle">
-                                            {{ data[currentObjectId].percentage?.toFixed(2) + '%'}}
+                                            <span>
+                                                {{ (data[currentObjectId].percentage! > 0 ? '+' : '') }}{{
+                                                data[currentObjectId].percentage?.toFixed(2) + '%'}}
+                                            </span>
                                         </div>
                                     </div>
                                     <div class="intro-phone-timeline">

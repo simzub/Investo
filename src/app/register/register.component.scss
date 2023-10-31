@@ -9,8 +9,8 @@
 .form-label {
   margin-bottom: 0.5rem;
   display: block;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-weight: 600;
   color: rgb(23 23 23);
 }
@@ -20,16 +20,16 @@
   box-sizing: border-box;
   width: 100%;
   appearance: none;
-  border-radius: 0.5rem;
-  border: 0.0625rem solid rgb(229 229 229);
+  border-radius: $border-radius;
+  border: $border-width solid $border-color;
   background-color: white;
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   color: rgb(23 23 23);
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   &:focus {
-    border-color: rgb(147 51 234);
-    box-shadow: 0 0 0 1px rgb(147 51 234);
+    border-color: $accent-color;
+    box-shadow: 0 0 0 1px $accent-color;
     outline: 2px solid transparent;
     outline-offset: 2px;
   }

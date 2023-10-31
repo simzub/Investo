@@ -4,7 +4,7 @@
 section {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  border-top: 0.0625rem solid rgb(229 229 229);
+  border-top: $border-width solid $border-color;
   @media (min-width: $breakpoint-sm) {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -17,7 +17,7 @@ section {
 
 .header {
   @extend .horizontal-center;
-  max-width: 40rem;
+  max-width: $half-content-width;
   @media (min-width: $breakpoint-lg) {
     margin-left: 0;
     margin-right: 0;
@@ -25,10 +25,10 @@ section {
 }
 
 .title {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: $font-size-3xl;
+  line-height: $line-height-3xl;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
   color: rgb(23 23 23);
   margin: 0;
 }
@@ -36,8 +36,8 @@ section {
 .description {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
   color: rgb(82 82 82);
 }
 
@@ -52,7 +52,7 @@ ul {
   list-style: none;
   padding: 0;
   display: grid;
-  max-width: 40rem;
+  max-width: $half-content-width;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 2rem;
   @media (min-width: $breakpoint-sm) {

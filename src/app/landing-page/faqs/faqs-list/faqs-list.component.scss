@@ -1,3 +1,5 @@
+@import "../../../../styles/variables.scss";
+
 ul {
   margin: 0;
   list-style: none;
@@ -9,7 +11,7 @@ ul {
 
 h3 {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: $font-size-lg;
   line-height: 1.5rem;
   font-weight: 600;
   color: rgb(23 23 23);
@@ -18,7 +20,7 @@ h3 {
 p {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   color: rgb(64 64 64);
 }

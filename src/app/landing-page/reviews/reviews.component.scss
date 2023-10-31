@@ -22,10 +22,10 @@ section {
   @extend .responsive-centered-layout;
 }
 .layout-title {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: $font-size-3xl;
+  line-height: $line-height-3xl;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
   color: rgb(23 23 23);
   margin: 0;
   @media (min-width: $breakpoint-sm) {
@@ -35,8 +35,8 @@ section {
 .layout-description {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
   color: rgb(82 82 82);
   @media (min-width: $breakpoint-sm) {
     text-align: center;

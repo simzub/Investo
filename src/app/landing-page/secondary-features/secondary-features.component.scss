@@ -16,22 +16,22 @@ section {
 
 .header {
   @extend .horizontal-center;
-  max-width: 40rem;
+  max-width: $half-content-width;
   @media (min-width: $breakpoint-sm) {
     text-align: center;
   }
   h2 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: $font-size-3xl;
+    line-height: $line-height-3xl;
     font-weight: 500;
-    letter-spacing: -0.025em;
+    letter-spacing: $letter-spacing;
     color: rgb(23 23 23);
     margin: 0;
   }
   p {
     margin-top: 0.5rem;
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
     color: rgb(82 82 82);
     margin-bottom: 0;
   }
@@ -41,11 +41,11 @@ ul {
   @extend .horizontal-center;
   margin-top: 4rem;
   display: grid;
-  max-width: 40rem;
+  max-width: $half-content-width;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   padding: 0;
   @media (min-width: $breakpoint-sm) {
     margin-top: 5rem;
@@ -62,7 +62,7 @@ ul {
 
 li {
   border-radius: 1rem;
-  border: $border;
+  border: $border-width solid $border-color;
   padding: 2rem;
   list-style-type: none;
 
@@ -71,8 +71,8 @@ li {
     margin-bottom: 0;
     font-weight: 600;
     color: rgb(23 23 23);
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
   }
   p {
     margin-top: 0.5rem;

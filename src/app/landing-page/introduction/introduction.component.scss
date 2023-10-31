@@ -48,18 +48,18 @@
 }
 
 .intro-title {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: $font-size-4xl;
+  line-height: $line-height-4xl;
   font-weight: 500;
   margin: 0;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
   color: rgb(17 24 39);
 }
 
 .intro-description {
   margin-top: 1.5rem;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
   color: rgb(82 82 82);
 }
 
@@ -73,7 +73,7 @@
 }
 
 .intro-app {
-  border-radius: 0.5rem;
+  border-radius: $border-radius;
   background-color: rgb(31 41 55);
   color: rgb(255 255 255);
   cursor: pointer;
@@ -89,7 +89,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: $border;
+  border: $border-width solid $border-color;
   outline-width: 0.125rem;
   outline-offset: 0.125rem;
   text-decoration: none;
@@ -97,7 +97,7 @@
   transition: border 0.3s;
 
   &:hover {
-    border: $border-hover;
+    border-color: $border-hover-color;
   }
 
   span {
@@ -129,7 +129,7 @@
   width: 64.125rem;
   left: -12rem;
   stroke: #d1d5db;
-  mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
+  mask-image: $mask-image;
 
   @media (min-width: $breakpoint-sm) {
     top: 4rem;
@@ -195,13 +195,13 @@
   gap: 0.5rem;
 
   div {
-    font-size: $font-size-extra-small;
+    font-size: $font-size-xs;
     line-height: 1.5rem;
     color: rgb(107 114 128);
   }
   p {
-    font-size: $font-size-small;
-    line-height: $line-height-small;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     color: rgb(17 24 39);
     margin: 0;
   }
@@ -212,7 +212,7 @@
 
 .intro-phone-container {
   margin-top: 0.75rem;
-  border-top: 0.0625rem solid rgb(229 229 229);
+  border-top: $border-width solid $border-color;
   padding-top: 1.25rem;
 }
 .intro-phone-percentages {
@@ -221,61 +221,64 @@
   gap: 0.5rem;
 }
 .percentages-price {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: $font-size-2xl;
+  line-height: $line-height-2xl;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
   color: rgb(15 23 42);
 }
 .percentages-currency {
-  font-size: $font-size-small;
-  line-height: $line-height-small;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   color: rgb(15 23 42);
 }
 .percentages-percentage {
   margin-left: auto;
-  font-size: $font-size-small;
-  line-height: $line-height-small;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
+  span {
+    white-space: nowrap;
+  }
 }
 
 .intro-phone-timeline {
   display: flex;
   margin-top: 1.5rem;
   gap: 1rem;
-  font-size: $font-size-extra-small;
-  line-height: $line-height-extra-small;
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
   color: rgb(107 114 128);
 }
 .intro-phone-timeline-active {
   font-weight: 600;
-  color: rgb(147 51 234);
+  color: $accent-color;
 }
 .intro-phone-graph {
   margin-top: 0.75rem;
   border-radius: 0.5rem;
   background-color: rgb(249 250 251);
-  border: 1px solid rgb(243 244 246);
+  border: $border-width solid rgb(243 244 246);
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 .intro-phone-btn {
   @extend .button;
   cursor: default;
   margin-top: 1rem;
-  background-color: rgb(147 51 234);
+  background-color: $accent-color;
   text-align: center;
   font-weight: 600;
   color: white;
 }
 .intro-phone-price {
   margin-top: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
 }
 .intro-phone-price-element {
   display: flex;
-  border-bottom: 0.0625rem solid rgb(243 243 243);
+  border-bottom: $border-width solid $border-color;
   justify-content: space-between;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -301,8 +304,8 @@
   }
   p {
     text-align: center;
-    font-size: $font-size-small;
-    line-height: $line-height-small;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     font-weight: 600;
     color: rgb(17 24 39);
 

@@ -14,7 +14,7 @@ main {
 }
 .layout {
   @extend .centered-layout;
-  padding: 5rem 1rem 5rem 1rem;
+  padding: 5rem 1rem;
   align-items: center;
   position: relative;
   isolation: isolate;
@@ -25,7 +25,7 @@ main {
   justify-content: center;
   text-align: center;
   @media (min-width: $breakpoint-sm) {
-    padding: 8rem 1.5rem 8rem 1.5rem;
+    padding: 8rem 1.5rem;
   }
   @media (min-width: $breakpoint-lg) {
     padding-left: 2rem;
@@ -39,13 +39,13 @@ main {
   z-index: -10;
   margin-top: 11rem;
   width: 68.125rem;
-  mask-image: linear-gradient(to bottom, white 20%, transparent 75%);
+  mask-image: $mask-image;
 }
 
 .error-code {
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-weight: 600;
   color: rgb(23 23 23);
 }
@@ -53,18 +53,18 @@ main {
 .error-title {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: $font-size-3xl;
+  line-height: $line-height-3xl;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: $letter-spacing;
   color: rgb(23 23 23);
 }
 
 .error-message {
   margin-top: 0.5rem;
   margin-bottom: 0;
-  font-size: 1.125rem;
-  line-height: 2rem;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
   color: rgb(82 82 82);
 }
 
@@ -74,7 +74,7 @@ main {
   justify-content: center;
   margin-top: 2rem;
   align-items: center;
-  border: $border;
+  border: $border-width solid $border-color;
   outline-width: 0.125rem;
   outline-offset: 0.125rem;
   text-decoration: none;
@@ -82,6 +82,6 @@ main {
   transition: border 0.3s;
 
   &:hover {
-    border: $border-hover;
+    border-color: $border-hover-color;
   }
 }

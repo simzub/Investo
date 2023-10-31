@@ -16,8 +16,7 @@ section {
 }
 
 .features-text {
-  margin-left: auto;
-  margin-right: auto;
+  @extend .horizontal-center;
   max-width: 42rem;
   @media (min-width: $breakpoint-lg) {
     margin-left: 0;
@@ -25,18 +24,18 @@ section {
     max-width: 48rem;
   }
   h2 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: $font-size-3xl;
+    line-height: $line-height-3xl;
     font-weight: 500;
-    letter-spacing: -0.025em;
+    letter-spacing: $letter-spacing;
     color: white;
     margin: 0;
   }
   p {
     margin-top: 0.5rem;
     margin-bottom: 0;
-    font-size: 1.125rem;
-    line-height: 2rem;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
     color: rgb(163 163 163);
   }
 }
