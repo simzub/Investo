@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/helpers.scss";
 
 .form-inputs {
   > *:not(:first-child) {
@@ -7,30 +8,9 @@
 }
 
 .form-label {
-  margin-bottom: 0.5rem;
-  display: block;
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-  font-weight: 600;
-  color: $dark-text-color;
+  @extend .label-field;
 }
 
 .form-input {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  appearance: none;
-  border-radius: $border-radius;
-  border: $border-width solid $border-color;
-  background-color: white;
-  padding: 0.5rem 0.75rem;
-  color: $dark-text-color;
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-  &:focus {
-    border-color: $accent-color;
-    box-shadow: 0 0 0 1px $accent-color;
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-  }
+  @extend .input-field;
 }

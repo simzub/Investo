@@ -2,7 +2,7 @@
 
 .centered-layout {
   @extend .horizontal-center;
-  max-width: 80rem;
+  max-width: $max-content-width;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -27,7 +27,36 @@
 .button {
   cursor: pointer;
   padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  border-radius: 0.5rem;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  border-radius: $border-radius;
+}
+
+.label-field {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  font-weight: 600;
+  color: $dark-text-color;
+}
+
+.input-field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  appearance: none;
+  border-radius: $border-radius;
+  border: $border-width solid $border-color;
+  background-color: white;
+  padding: 0.5rem 0.75rem;
+  color: $dark-text-color;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  &:focus {
+    border-color: $accent-color;
+    box-shadow: 0 0 0 1px $accent-color;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
 }

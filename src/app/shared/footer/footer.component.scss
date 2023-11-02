@@ -172,29 +172,11 @@ form {
 }
 
 .email-input {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  appearance: none;
-  border-radius: $border-radius;
-  border: $border-width solid $border-color;
-  background-color: white;
-  padding: 0.5rem 0.75rem;
-  color: $dark-text-color;
+  @extend .input-field;
 
-  font-size: $font-size-sm;
-  line-height: $line-height-sm;
-}
-
-.email-input::placeholder {
-  color: rgb(161 161 170);
-}
-
-.email-input:focus {
-  border-color: $accent-color;
-  box-shadow: 0 0 0 1px $accent-color;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  &::placeholder {
+    color: rgb(161, 161, 170);
+  }
 }
 
 .newsletter-button {
