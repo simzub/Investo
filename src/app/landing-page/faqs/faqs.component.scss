@@ -29,7 +29,7 @@ section {
   line-height: $line-height-3xl;
   font-weight: 500;
   letter-spacing: $letter-spacing;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ section {
 }
 
 a {
-  color: rgb(23 23 23);
+  color: $dark-text-color;
 }
 
 ul {

@@ -37,8 +37,8 @@ section {
   line-height: $line-height-3xl;
   font-weight: 500;
   margin: 0;
-  letter-spacing: -0.025em;
-  color: $letter-spacing;
+  letter-spacing: $letter-spacing;
+  color: $dark-text-color;
 }
 
 .description {

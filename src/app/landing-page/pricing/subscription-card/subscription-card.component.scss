@@ -17,7 +17,7 @@ section {
   font-size: $font-size-sm;
   line-height: $line-height-sm;
   font-weight: 600;
-  color: rgb(23, 23, 23);
+  color: $dark-text-color;
   margin: 0;
 }
 
@@ -33,7 +33,7 @@ section {
   font-size: $font-size-3xl;
   line-height: $line-height-3xl;
   letter-spacing: $letter-spacing;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
 }
 
 .description {
@@ -89,7 +89,7 @@ section {
 }
 
 .dark-background {
-  background-color: rgb(23 23 23);
+  background-color: $dark-text-color;
 }
 
 .dark-text {

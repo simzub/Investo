@@ -28,7 +28,7 @@ footer {
 .logo {
   display: flex;
   align-items: center;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
 }
 
 .logo-container {
@@ -125,7 +125,7 @@ a {
   line-height: $line-height-base;
   margin: 0;
   font-weight: 600;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
   span {
     inset: 0;
     @media (min-width: $breakpoint-sm) {
@@ -180,7 +180,7 @@ form {
   border: $border-width solid $border-color;
   background-color: white;
   padding: 0.5rem 0.75rem;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
 
   font-size: $font-size-sm;
   line-height: $line-height-sm;

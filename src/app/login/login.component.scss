@@ -12,7 +12,7 @@
   font-size: $font-size-sm;
   line-height: $line-height-sm;
   font-weight: 600;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
 }
 
 .form-input {
@@ -24,7 +24,7 @@
   border: $border-width solid $border-color;
   background-color: white;
   padding: 0.5rem 0.75rem;
-  color: rgb(23 23 23);
+  color: $dark-text-color;
   font-size: $font-size-sm;
   line-height: $line-height-sm;
   &:focus {
