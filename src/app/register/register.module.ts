@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RegisterComponent } from './register.component';
 import { SvgAssetsModule } from 'src/assets/svg/svg-assets.module';
-import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [RegisterComponent],
-  imports: [SvgAssetsModule, AppRoutingModule, SharedModule],
+  imports: [
+    SvgAssetsModule,
+    SharedModule,
+    RouterModule.forChild([{ path: '', component: RegisterComponent }]),
+  ],
 })
 export class RegisterModule {}

@@ -5,7 +5,7 @@ import { PhoneFrameComponent } from './phone-frame/phone-frame.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuthFormComponent } from './auth-form/auth-form.component';
 import { SvgAssetsModule } from 'src/assets/svg/svg-assets.module';
-import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { AppRoutingModule } from '../app-routing.module';
     FooterComponent,
     AuthFormComponent,
   ],
-  imports: [CommonModule, SvgAssetsModule, AppRoutingModule],
+  imports: [CommonModule, SvgAssetsModule, RouterModule],
   exports: [
     HeaderComponent,
     PhoneFrameComponent,
