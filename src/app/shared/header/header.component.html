@@ -24,22 +24,14 @@
             </div>
             <div class="user-actions">
                 <div class="small-screen-menu">
-                    <!-- Open Modal Button -->
                     <button class="small-screen-menu-btn" *ngIf="!isModalOpen" (click)="openModal()">
                         <app-svg-menu-closed></app-svg-menu-closed>
                     </button>
-                    <!-- Close Modal Button -->
                     <button class="small-screen-menu-btn" *ngIf="isModalOpen" (click)="closeModal()">
                         <app-svg-menu-open></app-svg-menu-open>
                     </button>
-
-
-                    <!-- The Modal -->
                     <div #myModal class="modal">
-
-                        <!-- Modal content -->
                         <div class="modal-content" [@slideInOut]="animationState">
-
                             <div class="small-screen-navigation">
                                 <a class="small-screen-item" routerLink="/" fragment="features" (click)="closeModal()">
                                     Features
