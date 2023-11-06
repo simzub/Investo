@@ -1,4 +1,4 @@
-# Investo
+# Investo App
 
 This is a simple investment app built using Angular.
 
